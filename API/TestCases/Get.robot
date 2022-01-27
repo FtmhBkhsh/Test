@@ -1,8 +1,10 @@
 ***Settings***
-Documentation  a test case for learning GET
+Documentation  a test case for learning GET request
 Library   RequestsLibrary
 Library   Collections
-Force Tags  API
+Default Tags  API
+Force Tags  GET
+
 
 ***Variables***
 ${base_url}  https://gorest.co.in
@@ -11,20 +13,11 @@ ${b_url}  data
 Get Info
       Create Session  first_session  ${base_url}
       ${response}=  GET On Session  first_session  /public/v1/posts/123/comments
+      ${stringg_response}=  Convert To String  ${response.content}
+      ${json_object}=  To Json    ${stringg_response}
+      ${json_object}=  To Json    ${stringg_response}
+      ${data_object}=  Convert To String  ${json_object}[data] 
+      Should Be Equal  ${data_object}  []
+      Log To Console    ${json_object}
 
-      ${json_object}  Parse Json    ${response.content}
-      FOR  ${item}    IN    @{json_object['data']}
-      Log To Console    ${item['id']}
-
-      #${data_content}=	Create Dictionary  ${response.content}  
-      #log to console  ${response.content}
-      #${hi}=  Get From Dictionary   ${data_content.data}  "data"
-
-      #FOR     ${key}    IN    @{data_content}
-     #Log     The current key is: ${key
-
-      #END	
-      #log to console  ${response.content}
-      log to console  ${buy}
-    #log to console  ${data}
 
