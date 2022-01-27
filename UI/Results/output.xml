@@ -1,190 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.1 on win32)" generated="20220118 17:15:21.779" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.9.1 on win32)" generated="20220126 20:32:01.812" rpa="false" schemaversion="2">
 <suite id="s1" name="Valid Login" source="C:\Users\Fatemeh\GitRepository\Test\UI\TestCases\Login\Valid_Login.robot">
-<kw name="Run Keywords" library="BuiltIn" type="SETUP">
-<arg>Open Page</arg>
-<arg>Login</arg>
-<doc>Executes all the given keywords in a sequence.</doc>
-<kw name="Open Page" library="Basic">
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>${SPEED}</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220118 17:15:22.322" endtime="20220118 17:15:22.324"/>
-</kw>
-<kw name="Set Selenium Timeout" library="SeleniumLibrary">
-<arg>${TIMEOUT}</arg>
-<doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220118 17:15:22.325" endtime="20220118 17:15:22.326"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${google_search_url}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220118 17:15:22.327" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/search?q=digikala'.</msg>
-<status status="PASS" starttime="20220118 17:15:22.326" endtime="20220118 17:15:36.919"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220118 17:15:36.920" endtime="20220118 17:15:37.048"/>
-</kw>
-<status status="PASS" starttime="20220118 17:15:22.321" endtime="20220118 17:15:37.048"/>
-</kw>
-<kw name="Login" library="Basic">
-<kw name="Wait For Element" library="Basic">
-<arg>${first_element_in_google_results}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220118 17:15:37.052" endtime="20220118 17:15:37.074"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220118 17:15:37.075" endtime="20220118 17:15:37.118"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220118 17:15:37.118" endtime="20220118 17:15:37.161"/>
-</kw>
-<status status="PASS" starttime="20220118 17:15:37.049" endtime="20220118 17:15:37.161"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${first_element_in_google_results}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:15:37.161" level="INFO">Clicking element 'css:div#rso&gt;div:nth-child(1)&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div.yuRUbf&gt;a&gt;h3'.</msg>
-<status status="PASS" starttime="20220118 17:15:37.161" endtime="20220118 17:16:39.391"/>
-</kw>
-<kw name="Wait For Element" library="Basic">
-<arg>${login_button}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220118 17:16:39.392" endtime="20220118 17:16:39.425"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220118 17:16:39.425" endtime="20220118 17:16:39.465"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220118 17:16:39.465" endtime="20220118 17:16:39.500"/>
-</kw>
-<status status="PASS" starttime="20220118 17:16:39.391" endtime="20220118 17:16:39.500"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${login_button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:16:39.500" level="INFO">Clicking element 'class:c-header__btn-login'.</msg>
-<status status="PASS" starttime="20220118 17:16:39.500" endtime="20220118 17:16:41.602"/>
-</kw>
-<kw name="Wait For Element" library="Basic">
-<arg>${email_phone_edittext}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220118 17:16:41.603" endtime="20220118 17:16:41.630"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220118 17:16:41.630" endtime="20220118 17:16:41.655"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220118 17:16:41.660" endtime="20220118 17:16:41.700"/>
-</kw>
-<status status="PASS" starttime="20220118 17:16:41.603" endtime="20220118 17:16:41.700"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${email_phone_edittext}</arg>
-<arg>${USERNAME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220118 17:16:41.700" level="INFO">Typing text 'fatemeh.1374.b@gmail.com' into text field 'name:login[email_phone]'.</msg>
-<status status="PASS" starttime="20220118 17:16:41.700" endtime="20220118 17:16:41.857"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:16:41.857" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
-<status status="PASS" starttime="20220118 17:16:41.857" endtime="20220118 17:16:44.452"/>
-</kw>
-<kw name="Wait For Element" library="Basic">
-<arg>${password_edittext}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220118 17:16:44.452" endtime="20220118 17:16:44.477"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220118 17:16:44.477" endtime="20220118 17:16:44.507"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220118 17:16:44.507" endtime="20220118 17:16:44.542"/>
-</kw>
-<status status="PASS" starttime="20220118 17:16:44.452" endtime="20220118 17:16:44.542"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${password_edittext}</arg>
-<arg>${PASSWORD}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220118 17:16:44.542" level="INFO">Typing text 'guitar' into text field 'name:login[password]'.</msg>
-<status status="PASS" starttime="20220118 17:16:44.542" endtime="20220118 17:16:44.652"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:16:44.652" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
-<status status="PASS" starttime="20220118 17:16:44.652" endtime="20220118 17:16:54.101"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${profile_button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:16:54.101" level="INFO">Clicking element 'class:c-header__btn-profile'.</msg>
-<status status="PASS" starttime="20220118 17:16:54.101" endtime="20220118 17:16:54.236"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>${profile_info_element}</arg>
-<arg>${name}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220118 17:16:54.276" level="INFO">Element 'class:c-header__profile-dropdown-user-info' contains text 'فاطمه بخشی'.</msg>
-<status status="PASS" starttime="20220118 17:16:54.241" endtime="20220118 17:16:54.276"/>
-</kw>
-<status status="PASS" starttime="20220118 17:15:37.049" endtime="20220118 17:16:54.276"/>
-</kw>
-<status status="PASS" starttime="20220118 17:15:22.320" endtime="20220118 17:16:54.276"/>
-</kw>
 <test id="s1-t1" name="Login to Digikala">
 <kw name="Open Page" library="Basic">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>${SPEED}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220118 17:16:54.276" endtime="20220118 17:16:54.281"/>
+<status status="PASS" starttime="20220126 20:32:02.203" endtime="20220126 20:32:02.203"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>${TIMEOUT}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220118 17:16:54.281" endtime="20220118 17:16:54.283"/>
+<status status="PASS" starttime="20220126 20:32:02.203" endtime="20220126 20:32:02.204"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${google_search_url}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220118 17:16:54.283" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/search?q=digikala'.</msg>
-<status status="PASS" starttime="20220118 17:16:54.283" endtime="20220118 17:17:06.639"/>
+<msg timestamp="20220126 20:32:02.204" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/search?q=digikala'.</msg>
+<status status="PASS" starttime="20220126 20:32:02.204" endtime="20220126 20:32:09.596"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220118 17:17:06.639" endtime="20220118 17:17:06.772"/>
+<status status="PASS" starttime="20220126 20:32:09.596" endtime="20220126 20:32:09.730"/>
 </kw>
-<status status="PASS" starttime="20220118 17:16:54.276" endtime="20220118 17:17:06.772"/>
+<status status="PASS" starttime="20220126 20:32:02.202" endtime="20220126 20:32:09.731"/>
 </kw>
 <kw name="Login" library="Basic">
 <kw name="Wait For Element" library="Basic">
@@ -192,139 +32,139 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220118 17:17:06.776" endtime="20220118 17:17:06.801"/>
+<status status="PASS" starttime="20220126 20:32:09.732" endtime="20220126 20:32:09.749"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220118 17:17:06.801" endtime="20220118 17:17:06.832"/>
+<status status="PASS" starttime="20220126 20:32:09.750" endtime="20220126 20:32:09.782"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220118 17:17:06.833" endtime="20220118 17:17:06.877"/>
+<status status="PASS" starttime="20220126 20:32:09.782" endtime="20220126 20:32:09.828"/>
 </kw>
-<status status="PASS" starttime="20220118 17:17:06.774" endtime="20220118 17:17:06.877"/>
+<status status="PASS" starttime="20220126 20:32:09.732" endtime="20220126 20:32:09.829"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${first_element_in_google_results}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:17:06.878" level="INFO">Clicking element 'css:div#rso&gt;div:nth-child(1)&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div.yuRUbf&gt;a&gt;h3'.</msg>
-<status status="PASS" starttime="20220118 17:17:06.878" endtime="20220118 17:17:20.572"/>
+<msg timestamp="20220126 20:32:09.829" level="INFO">Clicking element 'css:div#rso&gt;div:nth-child(1)&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div.yuRUbf&gt;a&gt;h3'.</msg>
+<status status="PASS" starttime="20220126 20:32:09.829" endtime="20220126 20:32:43.528"/>
 </kw>
 <kw name="Wait For Element" library="Basic">
 <arg>${login_button}</arg>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220118 17:17:20.572" endtime="20220118 17:17:20.607"/>
+<status status="PASS" starttime="20220126 20:32:43.530" endtime="20220126 20:32:43.626"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220118 17:17:20.611" endtime="20220118 17:17:20.646"/>
+<status status="PASS" starttime="20220126 20:32:43.626" endtime="20220126 20:32:43.684"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220118 17:17:20.646" endtime="20220118 17:17:20.681"/>
+<status status="PASS" starttime="20220126 20:32:43.684" endtime="20220126 20:32:43.751"/>
 </kw>
-<status status="PASS" starttime="20220118 17:17:20.572" endtime="20220118 17:17:20.681"/>
+<status status="PASS" starttime="20220126 20:32:43.529" endtime="20220126 20:32:43.751"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:17:20.681" level="INFO">Clicking element 'class:c-header__btn-login'.</msg>
-<status status="PASS" starttime="20220118 17:17:20.681" endtime="20220118 17:17:23.016"/>
+<msg timestamp="20220126 20:32:43.752" level="INFO">Clicking element 'class:c-header__btn-login'.</msg>
+<status status="PASS" starttime="20220126 20:32:43.751" endtime="20220126 20:32:45.654"/>
 </kw>
 <kw name="Wait For Element" library="Basic">
 <arg>${email_phone_edittext}</arg>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220118 17:17:23.017" endtime="20220118 17:17:23.039"/>
+<status status="PASS" starttime="20220126 20:32:45.655" endtime="20220126 20:32:45.703"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220118 17:17:23.039" endtime="20220118 17:17:23.069"/>
+<status status="PASS" starttime="20220126 20:32:45.703" endtime="20220126 20:32:45.733"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220118 17:17:23.069" endtime="20220118 17:17:23.109"/>
+<status status="PASS" starttime="20220126 20:32:45.734" endtime="20220126 20:32:45.773"/>
 </kw>
-<status status="PASS" starttime="20220118 17:17:23.016" endtime="20220118 17:17:23.109"/>
+<status status="PASS" starttime="20220126 20:32:45.654" endtime="20220126 20:32:45.774"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email_phone_edittext}</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220118 17:17:23.109" level="INFO">Typing text 'fatemeh.1374.b@gmail.com' into text field 'name:login[email_phone]'.</msg>
-<status status="PASS" starttime="20220118 17:17:23.109" endtime="20220118 17:17:23.279"/>
+<msg timestamp="20220126 20:32:45.774" level="INFO">Typing text 'fatemeh.1374.b@gmail.com' into text field 'name:login[email_phone]'.</msg>
+<status status="PASS" starttime="20220126 20:32:45.774" endtime="20220126 20:32:45.951"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submit_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:17:23.279" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
-<status status="PASS" starttime="20220118 17:17:23.279" endtime="20220118 17:17:24.180"/>
+<msg timestamp="20220126 20:32:45.952" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<status status="PASS" starttime="20220126 20:32:45.952" endtime="20220126 20:33:11.897"/>
 </kw>
 <kw name="Wait For Element" library="Basic">
 <arg>${password_edittext}</arg>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220118 17:17:24.180" endtime="20220118 17:17:24.205"/>
+<status status="PASS" starttime="20220126 20:33:11.899" endtime="20220126 20:33:11.919"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220118 17:17:24.205" endtime="20220118 17:17:24.230"/>
+<status status="PASS" starttime="20220126 20:33:11.919" endtime="20220126 20:33:11.949"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220118 17:17:24.230" endtime="20220118 17:17:24.260"/>
+<status status="PASS" starttime="20220126 20:33:11.949" endtime="20220126 20:33:11.988"/>
 </kw>
-<status status="PASS" starttime="20220118 17:17:24.180" endtime="20220118 17:17:24.260"/>
+<status status="PASS" starttime="20220126 20:33:11.898" endtime="20220126 20:33:11.988"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password_edittext}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220118 17:17:24.260" level="INFO">Typing text 'guitar' into text field 'name:login[password]'.</msg>
-<status status="PASS" starttime="20220118 17:17:24.260" endtime="20220118 17:17:24.379"/>
+<msg timestamp="20220126 20:33:11.989" level="INFO">Typing text 'guitar' into text field 'name:login[password]'.</msg>
+<status status="PASS" starttime="20220126 20:33:11.989" endtime="20220126 20:33:12.112"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submit_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:17:24.379" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
-<status status="PASS" starttime="20220118 17:17:24.379" endtime="20220118 17:17:44.188"/>
+<msg timestamp="20220126 20:33:12.112" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<status status="PASS" starttime="20220126 20:33:12.112" endtime="20220126 20:33:16.714"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${profile_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220118 17:17:44.188" level="INFO">Clicking element 'class:c-header__btn-profile'.</msg>
-<status status="PASS" starttime="20220118 17:17:44.188" endtime="20220118 17:17:44.388"/>
+<msg timestamp="20220126 20:33:16.715" level="INFO">Clicking element 'class:c-header__btn-profile'.</msg>
+<status status="PASS" starttime="20220126 20:33:16.714" endtime="20220126 20:33:17.966"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${profile_info_element}</arg>
 <arg>${name}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220118 17:17:44.428" level="INFO">Element 'class:c-header__profile-dropdown-user-info' contains text 'فاطمه بخشی'.</msg>
-<status status="PASS" starttime="20220118 17:17:44.388" endtime="20220118 17:17:44.428"/>
+<msg timestamp="20220126 20:33:18.079" level="INFO">Element 'class:c-header__profile-dropdown-user-info' contains text 'فاطمه بخشی'.</msg>
+<status status="PASS" starttime="20220126 20:33:17.966" endtime="20220126 20:33:18.079"/>
 </kw>
-<status status="PASS" starttime="20220118 17:17:06.773" endtime="20220118 17:17:44.428"/>
+<status status="PASS" starttime="20220126 20:32:09.731" endtime="20220126 20:33:18.080"/>
 </kw>
 <tag>Digikala</tag>
-<status status="PASS" starttime="20220118 17:16:54.276" endtime="20220118 17:17:44.433"/>
+<status status="PASS" starttime="20220126 20:32:02.201" endtime="20220126 20:33:18.081"/>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220118 17:17:44.436" endtime="20220118 17:17:46.716"/>
+<status status="PASS" starttime="20220126 20:33:18.084" endtime="20220126 20:33:20.328"/>
 </kw>
 <doc>a test suit for valid login</doc>
-<status status="PASS" starttime="20220118 17:15:21.782" endtime="20220118 17:17:46.716"/>
+<status status="PASS" starttime="20220126 20:32:01.815" endtime="20220126 20:33:20.328"/>
 </suite>
 <statistics>
 <total>

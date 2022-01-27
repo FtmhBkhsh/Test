@@ -10,7 +10,8 @@ Test Template  Find A Magazine
 ***Variables***
 ${category_of_products}  XPath:/html/body/header/nav/div/div/ul/li[1]/ul/li[2]/div[1]
 ${book_and_art__products}  XPath:/html/body/header/nav/div/div/ul/li[1]/ul/li[2]/div[2]/div[1]/a[8]
-${magazine_products}  XPath://*[@id="categories-8"]/ul/li[3]
+${magazine_products}  //*[@id="categories-8"]/ul/li[3]/a[1]
+#${magazine_products}  XPath://*[@id="categories-8"]/ul/li[3]
 ${close_festival}  XPath:/html/body/div[3]/button
 ${persian_magazine}  //div[text()='مجلات داخلی']
 ${foriegn_magazine}  //div[text()='مجلات خارجی']

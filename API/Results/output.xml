@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.1 on win32)" generated="20220119 14:11:19.485" rpa="false" schemaversion="2">
+<suite id="s1" name="Get" source="C:\Users\Fatemeh\GitRepository\Test\API\TestCases\Get.robot">
+<test id="s1-t1" name="Get Info">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>first_session</arg>
+<arg>${base_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220119 14:11:19.808" level="INFO">Creating Session using : alias=first_session, url=https://gorest.co.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220119 14:11:19.807" endtime="20220119 14:11:19.809"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>first_session</arg>
+<arg>/public/v1/posts/123/comments</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220119 14:11:21.408" level="INFO">GET Request : url=https://gorest.co.in/public/v1/posts/123/comments 
+ path_url=/public/v1/posts/123/comments 
+ headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220119 14:11:21.409" level="INFO">GET Response : url=https://gorest.co.in/public/v1/posts/123/comments 
+ status=200, reason=OK 
+ headers={'Server': 'nginx', 'Date': 'Wed, 19 Jan 2022 10:41:21 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'ETag': 'W/"75226247835122ae8f941243c9e848f5"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': 'f5a686a8-4858-40ba-bc87-6cdabb7a65d6', 'X-Runtime': '0.005019', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains', 'Content-Encoding': 'gzip'} 
+ body={"meta":{"pagination":{"total":3,"pages":1,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/comments?page=1","next":"https://gorest.co.in/public/v1/comments?page=2"}}},"data":[{"id":110,"post_id":123,"name":"Ganesh Tandon","email":"tandon_ganesh@rosenbaum.com","body":"Pariatur recusandae et. Magni dignissimos sapiente. Quis cumque tenetur."},{"id":1336,"post_id":123,"name":"DDSGGGG","email":"g15@gmail.com","body":"Tenetur sapiente autem. Cum facere rerum. Nesciunt blanditiis ipsum."},{"id":1338,"post_id":123,"name":"II","email":"Madaline36@example.org","body":"Accusantium voluptatem ut quod libero pariatur qui. Deleniti aut nobis nam velit labore. Quia autem mollitia aut aut culpa alias fugit sed rem. Deleniti aliquam necessitatibus id tempora. Molestiae perspiciatis atque ea et qui. Suscipit quaerat dicta nobis nulla numquam eius tempora omnis."}]} 
+ </msg>
+<msg timestamp="20220119 14:11:21.409" level="INFO">c:\users\fatemeh\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'gorest.co.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220119 14:11:21.412" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220119 14:11:19.809" endtime="20220119 14:11:21.412"/>
+</kw>
+<kw name="Parse Json">
+<var>${json_object}</var>
+<arg>${response.content}</arg>
+<msg timestamp="20220119 14:11:21.424" level="FAIL">No keyword with name 'Parse Json' found.</msg>
+<status status="FAIL" starttime="20220119 14:11:21.424" endtime="20220119 14:11:21.424"/>
+</kw>
+<for flavor="IN">
+<var>${item}</var>
+<value>@{json_object['data']}</value>
+<iter>
+<var name="${item}">${item}</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item['id']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220119 14:11:21.427" endtime="20220119 14:11:21.428"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${buy}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220119 14:11:21.428" endtime="20220119 14:11:21.428"/>
+</kw>
+<status status="NOT RUN" starttime="20220119 14:11:21.427" endtime="20220119 14:11:21.428"/>
+</iter>
+<status status="NOT RUN" starttime="20220119 14:11:21.427" endtime="20220119 14:11:21.428"/>
+</for>
+<tag>API</tag>
+<status status="FAIL" starttime="20220119 14:11:19.806" endtime="20220119 14:11:21.430">No keyword with name 'Parse Json' found.</status>
+</test>
+<doc>a test case for learning GET</doc>
+<status status="FAIL" starttime="20220119 14:11:19.500" endtime="20220119 14:11:21.436"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">API</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Get">Get</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

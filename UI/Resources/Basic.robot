@@ -1,7 +1,7 @@
 ***Settings***
 Documentation  a collection of basic keywords
 Library  SeleniumLibrary
-Resource  Variables.robot 
+Resource  variables.robot 
 
 ***Variables***
 ${name}  فاطمه بخشی
