@@ -54,11 +54,9 @@ Post Info 4
       Should Be Equal  ${response.json()}[name]  david
       Should Be Equal  ${response.json()}[email]  david@email.com
       ${id}=  Convert To Integer  ${response.json()}[id]	
-      ${more_than_100}=  Evaluate  (${id} / ${100})>=${0}
-      ${less_than_1000}=  Evaluate  (${id} / ${1000})<${1}
-      Should Be True  ${more_than_100} and ${less_than_1000}
+      ${between_100_and_1000}=  Evaluate  ${100}<${id}<${1000}
+      Should Be True  ${between_100_and_1000}
       ${jalali_date}=  Convert_time  ${response.json()}[createdAt]
-      Log To Console  output: ${jalali_date}
 
 
 
