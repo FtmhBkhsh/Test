@@ -1,5 +1,5 @@
 ***Settings***
-Documentation  a test case for learning API requests
+Documentation  few test cases for learning API requests
 Library   RequestsLibrary
 Library   Collections
 Library  JSONLibrary
