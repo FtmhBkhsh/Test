@@ -4,7 +4,6 @@ Library   RequestsLibrary
 Library   Collections
 Library  JSONLibrary
 Library  BuiltIn
-Library  os
 Library  ../Libraries/ConvertDate.py
 Default Tags  API
 Force Tags  GET

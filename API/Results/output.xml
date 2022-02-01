@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.1 on win32)" generated="20220201 15:11:06.443" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.9.1 on win32)" generated="20220201 15:15:55.591" rpa="false" schemaversion="2">
 <suite id="s1" name="API" source="C:\Users\Fatemeh\GitRepository\Test\API\TestCases\API.robot">
 <test id="s1-t1" name="Get Info 1">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>first_session</arg>
 <arg>${first_scenario_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220201 15:11:07.037" level="INFO">Creating Session using : alias=first_session, url=https://gorest.co.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20220201 15:11:07.036" endtime="20220201 15:11:07.037"/>
+<msg timestamp="20220201 15:15:58.584" level="INFO">Creating Session using : alias=first_session, url=https://gorest.co.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220201 15:15:58.583" endtime="20220201 15:15:58.585"/>
 </kw>
 <kw name="GET On Session" library="RequestsLibrary">
 <var>${response}</var>
 <arg>first_session</arg>
 <arg>/public/v1/posts/123/comments</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<msg timestamp="20220201 15:11:08.672" level="INFO">GET Request : url=https://gorest.co.in/public/v1/posts/123/comments 
+<msg timestamp="20220201 15:16:00.220" level="INFO">GET Request : url=https://gorest.co.in/public/v1/posts/123/comments 
  path_url=/public/v1/posts/123/comments 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20220201 15:11:08.672" level="INFO">GET Response : url=https://gorest.co.in/public/v1/posts/123/comments 
+<msg timestamp="20220201 15:16:00.220" level="INFO">GET Response : url=https://gorest.co.in/public/v1/posts/123/comments 
  status=200, reason=OK 
- headers={'Server': 'nginx', 'Date': 'Tue, 01 Feb 2022 11:41:08 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '0', 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'ETag': 'W/"996e3e39561b73e0aaf72fec3fa2ca2d"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': 'b5a865b6-52b2-4df6-86b0-ffc81a67fbd7', 'X-Runtime': '0.012505', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains', 'Content-Encoding': 'gzip'} 
+ headers={'Server': 'nginx', 'Date': 'Tue, 01 Feb 2022 11:46:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding, Origin', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '0', 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'ETag': 'W/"996e3e39561b73e0aaf72fec3fa2ca2d"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': '3ee2af95-8379-4a45-adab-51f454aecd35', 'X-Runtime': '0.016071', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains', 'Content-Encoding': 'gzip'} 
  body={"meta":{"pagination":{"total":0,"pages":0,"page":1,"limit":20,"links":{"previous":null,"current":null,"next":null}}},"data":[]} 
  </msg>
-<msg timestamp="20220201 15:11:08.672" level="INFO">c:\users\fatemeh\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'gorest.co.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+<msg timestamp="20220201 15:16:00.220" level="INFO">c:\users\fatemeh\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'gorest.co.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220201 15:11:08.674" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220201 15:11:07.038" endtime="20220201 15:11:08.674"/>
+<msg timestamp="20220201 15:16:00.222" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220201 15:15:58.585" endtime="20220201 15:16:00.222"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${data_object}</var>
 <arg>${response.json()}[${first_scenario_data_key}]</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220201 15:11:08.676" level="INFO">${data_object} = []</msg>
-<status status="PASS" starttime="20220201 15:11:08.674" endtime="20220201 15:11:08.676"/>
+<msg timestamp="20220201 15:16:00.441" level="INFO">${data_object} = []</msg>
+<status status="PASS" starttime="20220201 15:16:00.439" endtime="20220201 15:16:00.441"/>
 </kw>
 <kw name="Get Value From Json" library="JSONLibrary">
 <var>${values}</var>
 <arg>${response.json()}</arg>
 <arg>${pages_value_path}</arg>
 <doc>Get Value From JSON using JSONPath</doc>
-<msg timestamp="20220201 15:11:08.741" level="INFO">${values} = [1]</msg>
-<status status="PASS" starttime="20220201 15:11:08.677" endtime="20220201 15:11:08.741"/>
+<msg timestamp="20220201 15:16:00.577" level="INFO">${values} = [1]</msg>
+<status status="PASS" starttime="20220201 15:16:00.443" endtime="20220201 15:16:00.577"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${pages_string_value}</var>
 <arg>${values}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220201 15:11:08.742" level="INFO">${pages_string_value} = [1]</msg>
-<status status="PASS" starttime="20220201 15:11:08.741" endtime="20220201 15:11:08.742"/>
+<msg timestamp="20220201 15:16:00.579" level="INFO">${pages_string_value} = [1]</msg>
+<status status="PASS" starttime="20220201 15:16:00.578" endtime="20220201 15:16:00.579"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${data_object}</arg>
 <arg>[]</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220201 15:11:08.743" endtime="20220201 15:11:08.743"/>
+<status status="PASS" starttime="20220201 15:16:00.579" endtime="20220201 15:16:00.580"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${pages_string_value}</arg>
 <arg>[1]</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220201 15:11:08.743" endtime="20220201 15:11:08.744"/>
+<status status="PASS" starttime="20220201 15:16:00.580" endtime="20220201 15:16:00.581"/>
 </kw>
 <tag>API</tag>
 <tag>GET</tag>
-<status status="PASS" starttime="20220201 15:11:07.035" endtime="20220201 15:11:08.744"/>
+<status status="PASS" starttime="20220201 15:15:58.582" endtime="20220201 15:16:00.581"/>
 </test>
 <test id="s1-t2" name="Post Info 2">
 <kw name="Create Dictionary" library="BuiltIn">
@@ -73,16 +73,16 @@
 <arg>Content-Type=application/json</arg>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220201 15:11:08.747" level="INFO">${header} = {'Content-Type': 'application/json', 'Accept': 'application/json'}</msg>
-<status status="PASS" starttime="20220201 15:11:08.746" endtime="20220201 15:11:08.747"/>
+<msg timestamp="20220201 15:16:00.688" level="INFO">${header} = {'Content-Type': 'application/json', 'Accept': 'application/json'}</msg>
+<status status="PASS" starttime="20220201 15:16:00.686" endtime="20220201 15:16:00.688"/>
 </kw>
 <kw name="Create Session" library="RequestsLibrary">
 <arg>second_session</arg>
 <arg>${second_scenario_url}</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220201 15:11:08.749" level="INFO">Creating Session using : alias=second_session, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20220201 15:11:08.747" endtime="20220201 15:11:08.750"/>
+<msg timestamp="20220201 15:16:00.693" level="INFO">Creating Session using : alias=second_session, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220201 15:16:00.689" endtime="20220201 15:16:00.694"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${response}</var>
@@ -91,65 +91,65 @@
 <arg>data= ${body_2}</arg>
 <arg>headers=${header}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20220201 15:11:09.160" level="INFO">POST Request : url=https://reqres.in/api/users 
+<msg timestamp="20220201 15:16:01.088" level="INFO">POST Request : url=https://reqres.in/api/users 
  path_url=/api/users 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '38'} 
  body= {"name": "mourfeus", "job": "leader"} 
  </msg>
-<msg timestamp="20220201 15:11:09.161" level="INFO">POST Response : url=https://reqres.in/api/users 
+<msg timestamp="20220201 15:16:01.088" level="INFO">POST Response : url=https://reqres.in/api/users 
  status=201, reason=Created 
- headers={'Date': 'Tue, 01 Feb 2022 11:41:09 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '84', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"54-tpzzmlOnmuZgI0LI8RlfqC7Ik7c"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PIdlSXDUl5taTy4%2BXQtPizgCePexyVfJ%2B1k5sAgpF4wc4o9%2BxU0pP%2BFlT%2FUI1%2FTwHUSX2t%2FFmuywPiK9TFTsPSaM%2FxZ2qWxsYjs7216kffJYYqY8Kdl0Otwchjs%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d6ae8b35eb091ff-FRA', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
- body={"name":"mourfeus","job":"leader","id":"234","createdAt":"2022-02-01T11:41:09.077Z"} 
+ headers={'Date': 'Tue, 01 Feb 2022 11:46:01 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '84', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"54-z2OYotwqHBCFgmIAsph5Jgt7wxc"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=OhYodrMLi1qoYo6zWsbq%2BWA3vKnhltHvKc9dBv5y64BAf0uVZoHkI7THjm5C1aCP%2FCDGdMuwsFYuWEWwUPgdq0c%2FwI%2BoewwX24xmJLFiFxYc%2BX0u6h1Agd%2FDU0s%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d6aefd3dd7c90fb-FRA', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"name":"mourfeus","job":"leader","id":"870","createdAt":"2022-02-01T11:46:00.994Z"} 
  </msg>
-<msg timestamp="20220201 15:11:09.161" level="INFO">${response} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20220201 15:11:08.752" endtime="20220201 15:11:09.161"/>
+<msg timestamp="20220201 15:16:01.088" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220201 15:16:00.695" endtime="20220201 15:16:01.088"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${response_string_status}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220201 15:11:09.163" level="INFO">${response_string_status} = 201</msg>
-<status status="PASS" starttime="20220201 15:11:09.162" endtime="20220201 15:11:09.163"/>
+<msg timestamp="20220201 15:16:01.091" level="INFO">${response_string_status} = 201</msg>
+<status status="PASS" starttime="20220201 15:16:01.090" endtime="20220201 15:16:01.091"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${response_string_status}</arg>
 <arg>201</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220201 15:11:09.164" endtime="20220201 15:11:09.164"/>
+<status status="PASS" starttime="20220201 15:16:01.092" endtime="20220201 15:16:01.093"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${response_string_content}</var>
 <arg>${response.content}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220201 15:11:09.166" level="INFO">${response_string_content} = {"name":"mourfeus","job":"leader","id":"234","createdAt":"2022-02-01T11:41:09.077Z"}</msg>
-<status status="PASS" starttime="20220201 15:11:09.165" endtime="20220201 15:11:09.166"/>
+<msg timestamp="20220201 15:16:01.096" level="INFO">${response_string_content} = {"name":"mourfeus","job":"leader","id":"870","createdAt":"2022-02-01T11:46:00.994Z"}</msg>
+<status status="PASS" starttime="20220201 15:16:01.094" endtime="20220201 15:16:01.096"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${response_string_content}</arg>
 <arg>mourfeus</arg>
 <arg>job</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20220201 15:11:09.166" endtime="20220201 15:11:09.167"/>
+<status status="PASS" starttime="20220201 15:16:01.097" endtime="20220201 15:16:01.098"/>
 </kw>
 <tag>API</tag>
 <tag>GET</tag>
-<status status="PASS" starttime="20220201 15:11:08.745" endtime="20220201 15:11:09.167"/>
+<status status="PASS" starttime="20220201 15:16:00.684" endtime="20220201 15:16:01.099"/>
 </test>
 <test id="s1-t3" name="Post Info 3">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>third_session</arg>
 <arg>${second_scenario_url}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220201 15:11:09.170" level="INFO">Creating Session using : alias=third_session, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20220201 15:11:09.170" endtime="20220201 15:11:09.171"/>
+<msg timestamp="20220201 15:16:01.104" level="INFO">Creating Session using : alias=third_session, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220201 15:16:01.103" endtime="20220201 15:16:01.105"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${header}</var>
 <arg>Content-type=application/json</arg>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220201 15:11:09.173" level="INFO">${header} = {'Content-type': 'application/json', 'Accept': 'application/json'}</msg>
-<status status="PASS" starttime="20220201 15:11:09.172" endtime="20220201 15:11:09.173"/>
+<msg timestamp="20220201 15:16:01.107" level="INFO">${header} = {'Content-type': 'application/json', 'Accept': 'application/json'}</msg>
+<status status="PASS" starttime="20220201 15:16:01.106" endtime="20220201 15:16:01.107"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${response}</var>
@@ -158,24 +158,24 @@
 <arg>data=${body_3}</arg>
 <arg>expected_status=400</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20220201 15:11:09.578" level="INFO">POST Request : url=https://reqres.in/api/register 
+<msg timestamp="20220201 15:16:01.521" level="INFO">POST Request : url=https://reqres.in/api/register 
  path_url=/api/register 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '24'} 
  body={"email": "sydney@fife"} 
  </msg>
-<msg timestamp="20220201 15:11:09.578" level="INFO">POST Response : url=https://reqres.in/api/register 
+<msg timestamp="20220201 15:16:01.521" level="INFO">POST Response : url=https://reqres.in/api/register 
  status=400, reason=Bad Request 
- headers={'Date': 'Tue, 01 Feb 2022 11:41:09 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '37', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"25-Ik70kof1lbc973ShN5FoVPxYn7A"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=c%2BWSg1QWFyfZafCr%2FE9Q7TPAIeDcxpbZa16ZO4AY8nZ5RTrzUHc%2FWgG8Bp8FOpUS0Tc1928Rw7R00ZohlDrJ5eWxrxDf4wyz2CU2kGeYzD99Apj8cWsJNAhplN4%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d6ae8b5da195b50-FRA', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ headers={'Date': 'Tue, 01 Feb 2022 11:46:01 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '37', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"25-Ik70kof1lbc973ShN5FoVPxYn7A"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=F9jegrfO84dXsH8Du7FY0gcwB9ecBwzDVQuR1E31066rdhg%2BSQPn47VdyWCK4uJKJ1Tf7LyVDRDGgpGNrbCo5GjsabLa3fjKS%2BIRyHlySvr9Ag9Vg6wghSDDq2s%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d6aefd67cad9277-FRA', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
  body={"error":"Missing email or username"} 
  </msg>
-<msg timestamp="20220201 15:11:09.578" level="INFO">c:\users\fatemeh\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+<msg timestamp="20220201 15:16:01.521" level="INFO">c:\users\fatemeh\appdata\local\programs\python\python39\lib\site-packages\urllib3\connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220201 15:11:09.579" level="INFO">${response} = &lt;Response [400]&gt;</msg>
-<status status="PASS" starttime="20220201 15:11:09.173" endtime="20220201 15:11:09.579"/>
+<msg timestamp="20220201 15:16:01.523" level="INFO">${response} = &lt;Response [400]&gt;</msg>
+<status status="PASS" starttime="20220201 15:16:01.108" endtime="20220201 15:16:01.523"/>
 </kw>
 <tag>API</tag>
 <tag>GET</tag>
-<status status="PASS" starttime="20220201 15:11:09.169" endtime="20220201 15:11:09.580"/>
+<status status="PASS" starttime="20220201 15:16:01.101" endtime="20220201 15:16:01.524"/>
 </test>
 <test id="s1-t4" name="Post Info 4">
 <kw name="Create Dictionary" library="BuiltIn">
@@ -183,16 +183,16 @@
 <arg>Content-Type=application/json</arg>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220201 15:11:09.583" level="INFO">${header} = {'Content-Type': 'application/json', 'Accept': 'application/json'}</msg>
-<status status="PASS" starttime="20220201 15:11:09.582" endtime="20220201 15:11:09.583"/>
+<msg timestamp="20220201 15:16:01.527" level="INFO">${header} = {'Content-Type': 'application/json', 'Accept': 'application/json'}</msg>
+<status status="PASS" starttime="20220201 15:16:01.527" endtime="20220201 15:16:01.527"/>
 </kw>
 <kw name="Create Session" library="RequestsLibrary">
 <arg>second_session</arg>
 <arg>${second_scenario_url}</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220201 15:11:09.584" level="INFO">Creating Session using : alias=second_session, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
-<status status="PASS" starttime="20220201 15:11:09.584" endtime="20220201 15:11:09.585"/>
+<msg timestamp="20220201 15:16:01.529" level="INFO">Creating Session using : alias=second_session, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20220201 15:16:01.528" endtime="20220201 15:16:01.529"/>
 </kw>
 <kw name="POST On Session" library="RequestsLibrary">
 <var>${response}</var>
@@ -201,87 +201,87 @@
 <arg>data= ${body_4}</arg>
 <arg>headers=${header}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<msg timestamp="20220201 15:11:09.983" level="INFO">POST Request : url=https://reqres.in/api/users 
+<msg timestamp="20220201 15:16:01.936" level="INFO">POST Request : url=https://reqres.in/api/users 
  path_url=/api/users 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '62'} 
  body= {"name": "david", "job": "leader","email": "david@email.com"} 
  </msg>
-<msg timestamp="20220201 15:11:09.983" level="INFO">POST Response : url=https://reqres.in/api/users 
+<msg timestamp="20220201 15:16:01.936" level="INFO">POST Response : url=https://reqres.in/api/users 
  status=201, reason=Created 
- headers={'Date': 'Tue, 01 Feb 2022 11:41:09 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '107', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"6b-VhOfT82IyR/V72fMQD34xhJ/iC0"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=F1qVSstjOKUzMcoGkGFJ5v9M9EOxtZtYsD%2BrndroxIJfnaZx7zms00Hj8iLPoWKC2ArAxipo5ikd0N4S%2BA7A3I%2BKMxRpISfTTb4rkKvwBwJfKbffKvXFOr%2F3w0Y%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d6ae8b86dbc923e-FRA', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
- body={"name":"david","job":"leader","email":"david@email.com","id":"396","createdAt":"2022-02-01T11:41:09.893Z"} 
+ headers={'Date': 'Tue, 01 Feb 2022 11:46:01 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '107', 'Connection': 'keep-alive', 'x-powered-by': 'Express', 'access-control-allow-origin': '*', 'etag': 'W/"6b-QIc3iBzxxwxFHnUw9iFUA8azqNE"', 'via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=gCcu%2BI7I%2BqgTekXq6Xb7L5BzRMVcvUmnxm4HSXxQMFxtLUzpXYtQzB6K6Ot1zjJvcfR0H5nNcL0fQTpMuv6oRUlCAiJ38wASa%2F1E1dANm90GAaEckEQJ4qIMOB4%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6d6aefd90b1f9070-FRA', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"name":"david","job":"leader","email":"david@email.com","id":"784","createdAt":"2022-02-01T11:46:01.835Z"} 
  </msg>
-<msg timestamp="20220201 15:11:09.983" level="INFO">${response} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20220201 15:11:09.585" endtime="20220201 15:11:09.983"/>
+<msg timestamp="20220201 15:16:01.936" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20220201 15:16:01.530" endtime="20220201 15:16:01.936"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${response_string_status}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220201 15:11:09.986" level="INFO">${response_string_status} = 201</msg>
-<status status="PASS" starttime="20220201 15:11:09.984" endtime="20220201 15:11:09.986"/>
+<msg timestamp="20220201 15:16:01.940" level="INFO">${response_string_status} = 201</msg>
+<status status="PASS" starttime="20220201 15:16:01.938" endtime="20220201 15:16:01.940"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${response_string_status}</arg>
 <arg>201</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220201 15:11:09.986" endtime="20220201 15:11:09.987"/>
+<status status="PASS" starttime="20220201 15:16:01.941" endtime="20220201 15:16:01.941"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${response.json()}[name]</arg>
 <arg>david</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220201 15:11:09.987" endtime="20220201 15:11:09.989"/>
+<status status="PASS" starttime="20220201 15:16:01.942" endtime="20220201 15:16:01.944"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${response.json()}[email]</arg>
 <arg>david@email.com</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220201 15:11:09.989" endtime="20220201 15:11:09.991"/>
+<status status="PASS" starttime="20220201 15:16:01.945" endtime="20220201 15:16:01.948"/>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <var>${id}</var>
 <arg>${response.json()}[id]</arg>
 <doc>Converts the given item to an integer number.</doc>
-<msg timestamp="20220201 15:11:09.993" level="INFO">${id} = 396</msg>
-<status status="PASS" starttime="20220201 15:11:09.992" endtime="20220201 15:11:09.994"/>
+<msg timestamp="20220201 15:16:01.951" level="INFO">${id} = 784</msg>
+<status status="PASS" starttime="20220201 15:16:01.948" endtime="20220201 15:16:01.951"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${more_than_100}</var>
 <arg>(${id} / ${100})&gt;=${0}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220201 15:11:09.999" level="INFO">${more_than_100} = True</msg>
-<status status="PASS" starttime="20220201 15:11:09.994" endtime="20220201 15:11:09.999"/>
+<msg timestamp="20220201 15:16:01.958" level="INFO">${more_than_100} = True</msg>
+<status status="PASS" starttime="20220201 15:16:01.952" endtime="20220201 15:16:01.959"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${less_than_1000}</var>
 <arg>(${id} / ${1000})&lt;${1}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220201 15:11:10.002" level="INFO">${less_than_1000} = True</msg>
-<status status="PASS" starttime="20220201 15:11:10.000" endtime="20220201 15:11:10.002"/>
+<msg timestamp="20220201 15:16:01.962" level="INFO">${less_than_1000} = True</msg>
+<status status="PASS" starttime="20220201 15:16:01.960" endtime="20220201 15:16:01.962"/>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <arg>${more_than_100} and ${less_than_1000}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" starttime="20220201 15:11:10.003" endtime="20220201 15:11:10.004"/>
+<status status="PASS" starttime="20220201 15:16:01.963" endtime="20220201 15:16:01.964"/>
 </kw>
 <kw name="Convert Time" library="ConvertDate">
 <var>${jalali_date}</var>
 <arg>${response.json()}[createdAt]</arg>
-<msg timestamp="20220201 15:11:10.006" level="INFO">${jalali_date} = 1400-11-12T11:41:09.893Z</msg>
-<status status="PASS" starttime="20220201 15:11:10.004" endtime="20220201 15:11:10.006"/>
+<msg timestamp="20220201 15:16:01.969" level="INFO">${jalali_date} = 1400-11-12T11:46:01.835Z</msg>
+<status status="PASS" starttime="20220201 15:16:01.965" endtime="20220201 15:16:01.969"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>output: ${jalali_date}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220201 15:11:10.007" endtime="20220201 15:11:10.008"/>
+<status status="PASS" starttime="20220201 15:16:01.970" endtime="20220201 15:16:01.971"/>
 </kw>
 <tag>API</tag>
 <tag>GET</tag>
-<status status="PASS" starttime="20220201 15:11:09.581" endtime="20220201 15:11:10.009"/>
+<status status="PASS" starttime="20220201 15:16:01.526" endtime="20220201 15:16:01.972"/>
 </test>
 <doc>a test case for learning API requests</doc>
-<status status="PASS" starttime="20220201 15:11:06.446" endtime="20220201 15:11:10.012"/>
+<status status="PASS" starttime="20220201 15:15:55.595" endtime="20220201 15:16:01.977"/>
 </suite>
 <statistics>
 <total>
