@@ -5,8 +5,7 @@ Resource  variables.robot
 
 ***Variables***
 ${name}  فاطمه بخشی
-${google_search_url}  https://www.google.com/search?q=digikala
-${first_element_in_google_results}  css:div#rso>div:nth-child(1)>div>div>div>div>div>div>div.yuRUbf>a>h3
+${digikala_url}  https://www.digikala.com
 ${login_button}  class:c-header__btn-login
 ${email_phone_edittext}  name:login[email_phone]
 ${password_edittext}  name:login[password]
@@ -15,16 +14,15 @@ ${profile_button}  class:c-header__btn-profile
 ${profile_info_element}  class:c-header__profile-dropdown-user-info
 
 
+
 ***Keywords***
 Open Page
     Set Selenium Speed  ${SPEED}
     Set Selenium Timeout  ${TIMEOUT}
-    Open Browser  ${google_search_url}  ${BROWSER}
+    Open Browser  ${digikala_url}  ${BROWSER}
     Maximize Browser Window
 
 Login   
-    Wait For Element  ${first_element_in_google_results}
-    Click Element  ${first_element_in_google_results}
     Wait For Element  ${login_button}
     Click Element  ${login_button} 
     Wait For Element  ${email_phone_edittext}
@@ -47,3 +45,6 @@ Wait For Element
     Wait Until Page Contains Element  ${locator}
     Wait Until Element Is Visible  ${locator}
     Wait Until Element Is Enabled  ${locator}
+
+Go Back
+    Execute Javascript  history.back()

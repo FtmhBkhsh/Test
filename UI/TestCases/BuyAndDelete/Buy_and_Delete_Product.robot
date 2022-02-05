@@ -1,7 +1,8 @@
 **Settings***
-Documentation  a test suit for buying an item
+Documentation  a test suit for buying and deleting an item
 Resource  ../../Resources/Basic.robot 
 Resource  ../../Resources/Buy_resource.robot 
+Resource  ../../Resources/Delete_resource.robot 
 Default Tags  Digikala
 Force Tags  buy
 Suite Setup  Run Keywords  Open Page
@@ -42,3 +43,8 @@ Buy an item
     Click Element  ${add_to_card_button}
     Click Element  ${checkout_button}
 
+Delete the item
+    Go Back
+    Wait For Element  ${delete_element}
+    Click Element  ${delete_element}
+    Page Should Contain  ${empty_bascket}
