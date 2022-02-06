@@ -1,5 +1,6 @@
 ***Settings***
 Documentation  few test cases for learning API requests
+Resource  ../Resources/variables.robot
 Library   RequestsLibrary
 Library   Collections
 Library  JSONLibrary
@@ -9,18 +10,6 @@ Default Tags  API
 Force Tags  GET
 
 
-***Variables***
-#1st scenario
-${first_scenario_url}  https://gorest.co.in
-${first_scenario_data_key}  data
-${pages_value_path}  $.meta.pagination.page
-#2nd scenario
-${second_scenario_url}  https://reqres.in
-${body_2}  {"name": "mourfeus", "job": "leader"}
-#3rd scenario
-${body_3}  {"email": "sydney@fife"}
-#4th scenario
-${body_4}  {"name": "david", "job": "leader","email": "david@email.com"}
 ***Test Cases***
 Get Info 1
       Create Session  first_session  ${first_scenario_url}
@@ -57,6 +46,7 @@ Post Info 4
       ${between_100_and_1000}=  Evaluate  ${100}<${id}<${1000}
       Should Be True  ${between_100_and_1000}
       ${jalali_date}=  Convert_time  ${response.json()}[createdAt]
+      Log To Console  output: ${jalali_date}
 
 
 
