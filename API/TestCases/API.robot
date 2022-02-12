@@ -6,8 +6,7 @@ Library   Collections
 Library  JSONLibrary
 Library  BuiltIn
 Library  ../Libraries/ConvertDate.py
-Default Tags  API
-Force Tags  GET
+Force Tags  API
 
 
 ***Test Cases***
@@ -27,12 +26,12 @@ Post Info 2
       ${response_string_status}=  Convert To String  ${response.status_code}
       Should Be Equal  ${response_string_status}  201
       ${response_string_content}=  Convert To String  ${response.content}
-      Should Contain  ${response_string_content}  mourfeus  job
+      Should Contain  ${response_string_content}  ${name_2}  ${job_2}
 
 Post Info 3
       Create Session  third_session  ${second_scenario_url}  
       ${header}=    Create Dictionary    Content-type=application/json   Accept=application/json
-      ${response}=    POST On Session    third_session    api/register  data=${body_3}  expected_status=400
+      ${response}=    POST On Session    third_session    ${third_scenario_aliasl}  data=${body_3}  expected_status=400
 
 Post Info 4
       ${header}=    Create Dictionary  Content-Type=application/json  Accept=application/json 
@@ -40,8 +39,8 @@ Post Info 4
       ${response}=  Post on Session  second_session  ${second_scenario_aliasl}  data= ${body_4}  headers=${header}
       ${response_string_status}=  Convert To String  ${response.status_code}
       Should Be Equal  ${response_string_status}  201
-      Should Be Equal  ${response.json()}[name]  david
-      Should Be Equal  ${response.json()}[email]  david@email.com
+      Should Be Equal  ${response.json()}[name]  ${name_4}
+      Should Be Equal  ${response.json()}[email]  ${email_4}
       ${id}=  Convert To Integer  ${response.json()}[id]	
       ${between_100_and_1000}=  Evaluate  ${100}<${id}<${1000}
       Should Be True  ${between_100_and_1000}

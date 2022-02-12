@@ -8,10 +8,12 @@ ${pages_value_path}  $.meta.pagination.page
 ${second_scenario_url}  https://reqres.in
 ${second_scenario_aliasl}  /api/users
 ${body_2}  {"name": "mourfeus", "job": "leader"}
+${name_2}  mourfeus
+${job_2}  leader
 #3rd scenario
 ${third_scenario_aliasl}  api/register
 ${body_3}  {"email": "sydney@fife"}
 #4th scenario
 ${body_4}  {"name": "david", "job": "leader","email": "david@email.com"}
-${name}  david
-${email}  david@email.com
+${name_4}  david
+${email_4}  david@email.com
