@@ -16,14 +16,19 @@ Check Availabitity of Product
 
     Click On Element  ${sorting_order_element}
 
-    FOR    ${i}    IN RANGE    6
+
+    # four first pages of digikala serach results appear by scolling
+    # the For Loop below do scolling
+    FOR    ${i}    IN RANGE    8
         ${found}=  Run Keyword And Return Status  Page Should Contain Element  ${product_element}
         Log To Console  ${found}
         Exit For Loop If  ${found}       
         Run Keyword And Ignore Error  Scroll Element Into View   ${page_footer}     
     END
 
-    Click On Element  ${next_page}
+    Run Keyword Unless  ${found}  Click On Element  ${next_page}
+
+
     Click On Element  ${product_element}
 
     ${handle} =	Get Window Handles

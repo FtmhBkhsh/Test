@@ -23,22 +23,12 @@ Find A Magazine
     Mouse Over  ${category_of_products}    
     Mouse Over  ${book_and_art_products}
     Click Element  ${book_and_art_products}
-
+    Wait For Element  ${pic_of_magazine_and_map_products}  
     Click On Element  ${magazine_and_map_products}
     Click On Element  ${magazine_products}
     Click On Element  ${element_kind}
     Click On Element  ${cover_of_magazine_kinds}
     Click On Element  ${cover_of_magazine}
-
-    # four first pages of digikala serach results appear by scolling
-    # the For Loop below do scolling
-    FOR    ${i}    IN RANGE    10
-        ${found}=  Run Keyword And Return Status  Page Should Contain   ${element_name}
-        Log To Console  ${found}
-        Exit For Loop If  ${found}       
-        Run Keyword And Ignore Error  Scroll Element Into View   ${page_footer}     
-    END
-
     Click On Element  ${magazine_element}
 
     ${handle} =	Get Window Handles
