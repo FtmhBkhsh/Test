@@ -13,7 +13,7 @@ Force Tags  GET
 ***Test Cases***
 Get Info 1
       Create Session  first_session  ${first_scenario_url}
-      ${response}=  GET On Session  first_session  /public/v1/posts/123/comments
+      ${response}=  GET On Session  first_session  ${first_scenario_alias}
       ${data_object}=  Convert To String  ${response.json()}[${first_scenario_data_key}] 
       ${values}=  Get Value From Json  ${response.json()}  ${pages_value_path} 
       ${pages_string_value}=  Convert To String  ${values}
@@ -23,7 +23,7 @@ Get Info 1
 Post Info 2
       ${header}=    Create Dictionary  Content-Type=application/json  Accept=application/json 
       Create Session  second_session  ${second_scenario_url}  verify=true
-      ${response}=  Post on Session  second_session  /api/users  data= ${body_2}  headers=${header}
+      ${response}=  Post on Session  second_session  ${second_scenario_aliasl}  data= ${body_2}  headers=${header}
       ${response_string_status}=  Convert To String  ${response.status_code}
       Should Be Equal  ${response_string_status}  201
       ${response_string_content}=  Convert To String  ${response.content}
@@ -37,7 +37,7 @@ Post Info 3
 Post Info 4
       ${header}=    Create Dictionary  Content-Type=application/json  Accept=application/json 
       Create Session  second_session  ${second_scenario_url}  verify=true
-      ${response}=  Post on Session  second_session  /api/users  data= ${body_4}  headers=${header}
+      ${response}=  Post on Session  second_session  ${second_scenario_aliasl}  data= ${body_4}  headers=${header}
       ${response_string_status}=  Convert To String  ${response.status_code}
       Should Be Equal  ${response_string_status}  201
       Should Be Equal  ${response.json()}[name]  david
