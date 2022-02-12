@@ -1,0 +1,18 @@
+1644641768410	geckodriver	INFO	Listening on 127.0.0.1:52469
+1644641770788	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52470" "-no-remote" "-profile" "C:\\Users\\Fatemeh\\AppData\\Local\\Temp\\rust_mozprofileSb7C2r"
+1644641777356	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Fatemeh\\AppData\\Local\\Temp\\rust_mozprofileSb7C2r\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+DevTools listening on ws://localhost:52470/devtools/browser/9a3b84e4-bc05-4186-9651-ec7ccaaa669b
+1644641818690	Marionette	INFO	Listening on port 52479
+1644641819963	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644641859839	Marionette	INFO	Stopped listening on port 52479
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 1772, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

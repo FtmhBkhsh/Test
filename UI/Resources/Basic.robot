@@ -55,3 +55,11 @@ Wait For Element
 Go Back
     [Documentation]  go back
     Execute Javascript  history.back()
+
+Click On Element
+    [Documentation]  do a succesful click
+    [Arguments]  ${element}
+    Wait For Element  ${element}
+    Run Keyword And Ignore Error  Scroll Element Into View  ${element}
+    Run Keyword And Ignore Error  Mouse Over  ${element}
+    Click Element  ${element}

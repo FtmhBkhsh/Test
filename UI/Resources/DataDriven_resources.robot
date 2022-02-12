@@ -1,9 +1,10 @@
 ***Variables***
 ${category_of_products}  XPath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div
-${book_and_art__products}  XPath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[1]/div[8]/a/p
-${magazine_products}  //*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[8]/div[1]/ul/a[3]/span
-#${magazine_products}  XPath://*[@id="categories-8"]/ul/li[3]
-#${close_festival}  XPath:/html/body/div[3]/button
+${book_and_art_products}  XPath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[1]/div[8]/a/p
+#${magazine_products}  //*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[8]/div[1]/ul/a[3]/span
+${magazine_and_map_products}  //p[text()='مجلات، نقشه و نشانگر کتاب']
+${pic_of_magazine_and_map_products}  //*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/div[3]/div[2]/span[2]/a/div
+${magazine_products}  //div[text()='مجلات']
 ${persian_magazine}  //div[text()='مجلات داخلی']
 ${foriegn_magazine}  //div[text()='مجلات خارجی']
 ${cover_of_magazine_kinds}   //div[text()='نوع جلد']
@@ -15,3 +16,4 @@ ${persian_element}  //h2[contains(text(),'مجله سینمایی فارابی �
 ${foriegn_element}  //h2[contains(text(),'مجله THE BATMAN WHO LAUGHS 1')] 
 ${persian_element_name}   سینمایی فارابی شماره 84
 ${foriegn_element_name}   THE BATMAN WHO LAUGHS 
+${cover}  //p[text()='کاغذی']

@@ -1,0 +1,22 @@
+1644641628076	geckodriver	INFO	Listening on 127.0.0.1:52283
+1644641631720	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52284" "-no-remote" "-profile" "C:\\Users\\Fatemeh\\AppData\\Local\\Temp\\rust_mozprofile0Xhkw8"
+1644641706342	Marionette	INFO	Marionette enabled
+[GFX1-]: Killing GPU process due to IPC reply timeout
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: Failed to create remote compositor
+[Parent 6356, Main Thread] WARNING: base::KillProcess refusing to terminate process handle 0: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:402
+[GFX1-]: [D3D11] failed to get compositor device.
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_NO_DEVICE
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Fatemeh\\AppData\\Local\\Temp\\rust_mozprofile0Xhkw8\\search.json.mozlz4", (void 0)))
+[GFX1-]: [D3D11] failed to get compositor device.
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_NO_DEVICE
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+DevTools listening on ws://localhost:52284/devtools/browser/fbbf7595-867c-4fbf-9b2a-2d19aea11a04
+1644641755631	Marionette	INFO	Listening on port 52293
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1644641831651	Marionette	INFO	Stopped listening on port 52293
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed

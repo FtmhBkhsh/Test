@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.1 on win32)" generated="20220208 16:44:27.906" rpa="false" schemaversion="2">
-<suite id="s1" name="Check Availabitity of Product" source="C:\Users\Fatemeh\GitRepository\Test\UI\TestCases\CheckAvailability\Check_Availabitity_of_Product.robot">
+<robot generator="Robot 4.1.3 (Python 3.9.1 on win32)" generated="20220212 08:43:30.085" rpa="false" schemaversion="2">
+<suite id="s1" name="Buy and Delete Product" source="C:\Users\Fatemeh\GitRepository\Test\UI\TestCases\BuyAndDelete\Buy_and_Delete_Product.robot">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
 <arg>Open Page</arg>
 <arg>Login</arg>
@@ -10,25 +10,25 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>${SPEED}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220208 16:44:28.229" endtime="20220208 16:44:28.230"/>
+<status status="PASS" starttime="20220212 08:43:30.430" endtime="20220212 08:43:30.431"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>${TIMEOUT}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220208 16:44:28.230" endtime="20220208 16:44:28.230"/>
+<status status="PASS" starttime="20220212 08:43:30.431" endtime="20220212 08:43:30.432"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${digikala_url}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220208 16:44:28.232" level="INFO">Opening browser 'chrome' to base url 'https://www.digikala.com'.</msg>
-<status status="PASS" starttime="20220208 16:44:28.231" endtime="20220208 16:44:46.944"/>
+<msg timestamp="20220212 08:43:30.433" level="INFO">Opening browser 'chrome' to base url 'https://www.digikala.com'.</msg>
+<status status="PASS" starttime="20220212 08:43:30.432" endtime="20220212 08:44:35.122"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220208 16:44:46.945" endtime="20220208 16:44:47.297"/>
+<status status="PASS" starttime="20220212 08:44:35.122" endtime="20220212 08:44:35.740"/>
 </kw>
-<status status="PASS" starttime="20220208 16:44:28.229" endtime="20220208 16:44:47.298"/>
+<status status="PASS" starttime="20220212 08:43:30.430" endtime="20220212 08:44:35.741"/>
 </kw>
 <kw name="Login" library="Basic">
 <doc>login</doc>
@@ -38,25 +38,25 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:44:47.299" endtime="20220208 16:44:47.540"/>
+<status status="PASS" starttime="20220212 08:44:35.743" endtime="20220212 08:44:38.184"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:44:47.541" endtime="20220208 16:44:47.699"/>
+<status status="PASS" starttime="20220212 08:44:38.184" endtime="20220212 08:44:38.366"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:44:47.699" endtime="20220208 16:44:47.864"/>
+<status status="PASS" starttime="20220212 08:44:38.367" endtime="20220212 08:44:38.689"/>
 </kw>
-<status status="PASS" starttime="20220208 16:44:47.299" endtime="20220208 16:44:47.865"/>
+<status status="PASS" starttime="20220212 08:44:35.742" endtime="20220212 08:44:38.689"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:44:47.865" level="INFO">Clicking element '//div[contains(text(),'ورود')]'.</msg>
-<status status="PASS" starttime="20220208 16:44:47.865" endtime="20220208 16:44:48.534"/>
+<msg timestamp="20220212 08:44:38.690" level="INFO">Clicking element '//div[contains(text(),'ورود')]'.</msg>
+<status status="PASS" starttime="20220212 08:44:38.689" endtime="20220212 08:44:43.848"/>
 </kw>
 <kw name="Wait For Element" library="Basic">
 <arg>${email_phone_edittext}</arg>
@@ -64,32 +64,32 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:44:48.535" endtime="20220208 16:44:48.574"/>
+<status status="PASS" starttime="20220212 08:44:43.850" endtime="20220212 08:44:44.310"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:44:48.574" endtime="20220208 16:44:48.610"/>
+<status status="PASS" starttime="20220212 08:44:44.310" endtime="20220212 08:44:44.343"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:44:48.611" endtime="20220208 16:44:48.663"/>
+<status status="PASS" starttime="20220212 08:44:44.343" endtime="20220212 08:44:44.427"/>
 </kw>
-<status status="PASS" starttime="20220208 16:44:48.534" endtime="20220208 16:44:48.663"/>
+<status status="PASS" starttime="20220212 08:44:43.849" endtime="20220212 08:44:44.428"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email_phone_edittext}</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220208 16:44:48.664" level="INFO">Typing text 'fatemeh.1374.b@gmail.com' into text field 'name:username'.</msg>
-<status status="PASS" starttime="20220208 16:44:48.663" endtime="20220208 16:44:48.864"/>
+<msg timestamp="20220212 08:44:44.429" level="INFO">Typing text 'fatemeh.1374.b@gmail.com' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20220212 08:44:44.428" endtime="20220212 08:44:47.197"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submit_button_1}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:44:48.864" level="INFO">Clicking element '//div[contains(text(),'ورود')]'.</msg>
-<status status="PASS" starttime="20220208 16:44:48.864" endtime="20220208 16:44:48.937"/>
+<msg timestamp="20220212 08:44:47.198" level="INFO">Clicking element '//div[contains(text(),'ورود')]'.</msg>
+<status status="PASS" starttime="20220212 08:44:47.197" endtime="20220212 08:44:47.880"/>
 </kw>
 <kw name="Wait For Element" library="Basic">
 <arg>${password_edittext}</arg>
@@ -97,32 +97,32 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:44:48.938" endtime="20220208 16:44:49.178"/>
+<status status="PASS" starttime="20220212 08:44:47.881" endtime="20220212 08:44:48.183"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:44:49.178" endtime="20220208 16:44:49.224"/>
+<status status="PASS" starttime="20220212 08:44:48.183" endtime="20220212 08:44:48.211"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:44:49.225" endtime="20220208 16:44:49.267"/>
+<status status="PASS" starttime="20220212 08:44:48.212" endtime="20220212 08:44:48.252"/>
 </kw>
-<status status="PASS" starttime="20220208 16:44:48.937" endtime="20220208 16:44:49.267"/>
+<status status="PASS" starttime="20220212 08:44:47.880" endtime="20220212 08:44:48.253"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password_edittext}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220208 16:44:49.268" level="INFO">Typing text 'guitar' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20220208 16:44:49.268" endtime="20220208 16:44:49.373"/>
+<msg timestamp="20220212 08:44:48.253" level="INFO">Typing text 'guitar' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20220212 08:44:48.253" endtime="20220212 08:44:48.513"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submit_button_2}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:44:49.374" level="INFO">Clicking element '//div[contains(text(),'تایید')]'.</msg>
-<status status="PASS" starttime="20220208 16:44:49.373" endtime="20220208 16:44:49.446"/>
+<msg timestamp="20220212 08:44:48.514" level="INFO">Clicking element '//div[contains(text(),'تایید')]'.</msg>
+<status status="PASS" starttime="20220212 08:44:48.514" endtime="20220212 08:44:48.612"/>
 </kw>
 <kw name="Wait For Element" library="Basic">
 <arg>${profile_button}</arg>
@@ -130,575 +130,731 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:44:49.447" endtime="20220208 16:44:50.956"/>
+<status status="PASS" starttime="20220212 08:44:48.613" endtime="20220212 08:44:50.234"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:44:50.956" endtime="20220208 16:44:52.980"/>
+<status status="PASS" starttime="20220212 08:44:50.235" endtime="20220212 08:44:52.735"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:44:52.980" endtime="20220208 16:44:53.026"/>
+<status status="PASS" starttime="20220212 08:44:52.735" endtime="20220212 08:44:52.906"/>
 </kw>
-<status status="PASS" starttime="20220208 16:44:49.446" endtime="20220208 16:44:53.026"/>
+<status status="PASS" starttime="20220212 08:44:48.613" endtime="20220212 08:44:52.906"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${profile_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:44:53.026" level="INFO">Clicking element '//*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div[1]/div[1]/div[2]'.</msg>
-<status status="PASS" starttime="20220208 16:44:53.026" endtime="20220208 16:44:53.140"/>
+<msg timestamp="20220212 08:44:52.907" level="INFO">Clicking element '//*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div[1]/div[1]/div[2]'.</msg>
+<status status="PASS" starttime="20220212 08:44:52.907" endtime="20220212 08:44:53.089"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${profile_info_element}</arg>
 <arg>${name}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220208 16:44:53.399" level="INFO">Element '//*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div[1]/div[2]/a/div/div[2]/span' contains text 'فاطمه بخشی'.</msg>
-<status status="PASS" starttime="20220208 16:44:53.140" endtime="20220208 16:44:53.399"/>
+<msg timestamp="20220212 08:44:53.205" level="INFO">Element '//*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div[1]/div[2]/a/div/div[2]/span' contains text 'فاطمه بخشی'.</msg>
+<status status="PASS" starttime="20220212 08:44:53.090" endtime="20220212 08:44:53.205"/>
 </kw>
-<status status="PASS" starttime="20220208 16:44:47.298" endtime="20220208 16:44:53.400"/>
+<status status="PASS" starttime="20220212 08:44:35.741" endtime="20220212 08:44:53.206"/>
 </kw>
-<status status="PASS" starttime="20220208 16:44:28.228" endtime="20220208 16:44:53.400"/>
+<status status="PASS" starttime="20220212 08:43:30.422" endtime="20220212 08:44:53.206"/>
 </kw>
-<test id="s1-t1" name="Check Availabitity of Product">
+<test id="s1-t1" name="Buy an item">
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${category_of_products}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220208 16:44:53.403" level="INFO">Simulating Mouse Over on element 'XPath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div'.</msg>
-<status status="PASS" starttime="20220208 16:44:53.402" endtime="20220208 16:44:53.814"/>
+<msg timestamp="20220212 08:44:53.208" level="INFO">Simulating Mouse Over on element 'XPath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div'.</msg>
+<status status="PASS" starttime="20220212 08:44:53.207" endtime="20220212 08:44:53.563"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${digital_products}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220208 16:44:53.818" level="INFO">Simulating Mouse Over on element 'XPath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[1]/div[1]/a'.</msg>
-<status status="PASS" starttime="20220208 16:44:53.817" endtime="20220208 16:44:54.122"/>
+<msg timestamp="20220212 08:44:53.565" level="INFO">Simulating Mouse Over on element 'XPath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[1]/div[1]/a'.</msg>
+<status status="PASS" starttime="20220212 08:44:53.564" endtime="20220212 08:44:54.071"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${apple_products}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:44:54.124" level="INFO">Clicking element 'XPath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[1]/div[1]/ul/a[8]'.</msg>
-<status status="PASS" starttime="20220208 16:44:54.123" endtime="20220208 16:44:54.559"/>
+<msg timestamp="20220212 08:44:54.073" level="INFO">Clicking element 'XPath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[1]/div[1]/ul/a[8]'.</msg>
+<status status="PASS" starttime="20220212 08:44:54.072" endtime="20220212 08:44:54.877"/>
 </kw>
+<kw name="Click On Element" library="Basic">
+<arg>${seller}</arg>
+<doc>do a succesful click</doc>
 <kw name="Wait For Element" library="Basic">
-<arg>${sorting_order_element}</arg>
+<arg>${element}</arg>
 <doc>all typed of waits</doc>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:44:54.562" endtime="20220208 16:44:55.264"/>
+<status status="PASS" starttime="20220212 08:44:54.885" endtime="20220212 08:44:56.039"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:44:55.264" endtime="20220208 16:44:55.317"/>
+<status status="PASS" starttime="20220212 08:44:56.039" endtime="20220212 08:44:56.239"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:44:55.318" endtime="20220208 16:44:55.397"/>
+<status status="PASS" starttime="20220212 08:44:56.239" endtime="20220212 08:44:56.299"/>
 </kw>
-<status status="PASS" starttime="20220208 16:44:54.561" endtime="20220208 16:44:55.397"/>
-</kw>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${sorting_order_element}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220208 16:44:55.398" endtime="20220208 16:44:55.691"/>
-</kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>${sorting_order_element}</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220208 16:44:55.693" level="INFO">Simulating Mouse Over on element 'XPath://div[text()='پرفروش‌ترین‌']'.</msg>
-<status status="PASS" starttime="20220208 16:44:55.692" endtime="20220208 16:44:55.992"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${sorting_order_element}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:44:55.994" level="INFO">Clicking element 'XPath://div[text()='پرفروش‌ترین‌']'.</msg>
-<status status="PASS" starttime="20220208 16:44:55.993" endtime="20220208 16:44:56.258"/>
-</kw>
-<for flavor="IN RANGE">
-<var>${i}</var>
-<value>10</value>
-<iter>
-<var name="${i}">0</var>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${found}</var>
-<arg>Page Should Contain Element</arg>
-<arg>${product_element}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${product_element}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220208 16:44:57.460" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1193.png"&gt;&lt;img src="selenium-screenshot-1193.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220208 16:44:56.753" endtime="20220208 16:44:57.460"/>
-</kw>
-<msg timestamp="20220208 16:44:57.463" level="FAIL">Page should have contained element '//h2[contains(text(),'iPhone XS تک سیم کارت ظرفیت 512 گیگابایت')]' but did not.</msg>
-<status status="FAIL" starttime="20220208 16:44:56.263" endtime="20220208 16:44:57.463"/>
-</kw>
-<msg timestamp="20220208 16:44:57.464" level="INFO">${found} = False</msg>
-<status status="PASS" starttime="20220208 16:44:56.262" endtime="20220208 16:44:57.464"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${found}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220208 16:44:57.464" endtime="20220208 16:44:57.465"/>
-</kw>
-<kw name="Exit For Loop If" library="BuiltIn">
-<arg>${found}</arg>
-<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220208 16:44:57.465" endtime="20220208 16:44:57.466"/>
+<status status="PASS" starttime="20220212 08:44:54.883" endtime="20220212 08:44:56.299"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Scroll Element Into View</arg>
-<arg>${page_footer}</arg>
+<arg>${element}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${page_footer}</arg>
+<arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220208 16:44:58.188" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1194.png"&gt;&lt;img src="selenium-screenshot-1194.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220208 16:44:57.591" endtime="20220208 16:44:58.188"/>
+<status status="PASS" starttime="20220212 08:44:56.300" endtime="20220212 08:44:56.598"/>
 </kw>
-<msg timestamp="20220208 16:44:58.196" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=97.0.4692.99)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x01236903+2517251]
-	Ordinal0 [0x011CF8E1+2095329]
-	Ordinal0 [0x010D2710+1058576]
-	Ordinal0 [0x0112D1C4+1429956]
-	Ordinal0 [0x011164D3+1336531]
-	Ordinal0 [0x01125BBF+1399743]
-	Ordinal0 [0x0111639B+1336219]
-	Ordinal0 [0x010F27A7+1189799]
-	Ordinal0 [0x010F3609+1193481]
-	GetHandleVerifier [0x013C5904+1577972]
-	GetHandleVerifier [0x01470B97+2279047]
-	GetHandleVerifier [0x012C6D09+534521]
-	GetHandleVerifier [0x012C5DB9+530601]
-	Ordinal0 [0x011D4FF9+2117625]
-	Ordinal0 [0x011D98A8+2136232]
-	Ordinal0 [0x011D99E2+2136546]
-	Ordinal0 [0x011E3541+2176321]
-	BaseThreadInitThunk [0x76BE6359+25]
-	RtlGetAppContainerNamedObjectPath [0x776387D4+228]
-	RtlGetAppContainerNamedObjectPath [0x776387A4+180]
-</msg>
-<status status="FAIL" starttime="20220208 16:44:57.466" endtime="20220208 16:44:58.196"/>
-</kw>
-<status status="PASS" starttime="20220208 16:44:57.466" endtime="20220208 16:44:58.196"/>
-</kw>
-<status status="PASS" starttime="20220208 16:44:56.262" endtime="20220208 16:44:58.196"/>
-</iter>
-<iter>
-<var name="${i}">1</var>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${found}</var>
-<arg>Page Should Contain Element</arg>
-<arg>${product_element}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${product_element}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220208 16:44:59.366" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1195.png"&gt;&lt;img src="selenium-screenshot-1195.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220208 16:44:58.933" endtime="20220208 16:44:59.366"/>
-</kw>
-<msg timestamp="20220208 16:44:59.367" level="FAIL">Page should have contained element '//h2[contains(text(),'iPhone XS تک سیم کارت ظرفیت 512 گیگابایت')]' but did not.</msg>
-<status status="FAIL" starttime="20220208 16:44:58.197" endtime="20220208 16:44:59.367"/>
-</kw>
-<msg timestamp="20220208 16:44:59.367" level="INFO">${found} = False</msg>
-<status status="PASS" starttime="20220208 16:44:58.197" endtime="20220208 16:44:59.368"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${found}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220208 16:44:59.368" endtime="20220208 16:44:59.369"/>
-</kw>
-<kw name="Exit For Loop If" library="BuiltIn">
-<arg>${found}</arg>
-<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220208 16:44:59.369" endtime="20220208 16:44:59.369"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<arg>Scroll Element Into View</arg>
-<arg>${page_footer}</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${page_footer}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220208 16:45:00.050" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1196.png"&gt;&lt;img src="selenium-screenshot-1196.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220208 16:44:59.406" endtime="20220208 16:45:00.050"/>
-</kw>
-<msg timestamp="20220208 16:45:00.053" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=97.0.4692.99)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x01236903+2517251]
-	Ordinal0 [0x011CF8E1+2095329]
-	Ordinal0 [0x010D2710+1058576]
-	Ordinal0 [0x0112D1C4+1429956]
-	Ordinal0 [0x011164D3+1336531]
-	Ordinal0 [0x01125BBF+1399743]
-	Ordinal0 [0x0111639B+1336219]
-	Ordinal0 [0x010F27A7+1189799]
-	Ordinal0 [0x010F3609+1193481]
-	GetHandleVerifier [0x013C5904+1577972]
-	GetHandleVerifier [0x01470B97+2279047]
-	GetHandleVerifier [0x012C6D09+534521]
-	GetHandleVerifier [0x012C5DB9+530601]
-	Ordinal0 [0x011D4FF9+2117625]
-	Ordinal0 [0x011D98A8+2136232]
-	Ordinal0 [0x011D99E2+2136546]
-	Ordinal0 [0x011E3541+2176321]
-	BaseThreadInitThunk [0x76BE6359+25]
-	RtlGetAppContainerNamedObjectPath [0x776387D4+228]
-	RtlGetAppContainerNamedObjectPath [0x776387A4+180]
-</msg>
-<status status="FAIL" starttime="20220208 16:44:59.370" endtime="20220208 16:45:00.054"/>
-</kw>
-<status status="PASS" starttime="20220208 16:44:59.369" endtime="20220208 16:45:00.054"/>
-</kw>
-<status status="PASS" starttime="20220208 16:44:58.196" endtime="20220208 16:45:00.054"/>
-</iter>
-<iter>
-<var name="${i}">2</var>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${found}</var>
-<arg>Page Should Contain Element</arg>
-<arg>${product_element}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${product_element}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220208 16:45:01.036" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1197.png"&gt;&lt;img src="selenium-screenshot-1197.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220208 16:45:00.456" endtime="20220208 16:45:01.037"/>
-</kw>
-<msg timestamp="20220208 16:45:01.038" level="FAIL">Page should have contained element '//h2[contains(text(),'iPhone XS تک سیم کارت ظرفیت 512 گیگابایت')]' but did not.</msg>
-<status status="FAIL" starttime="20220208 16:45:00.055" endtime="20220208 16:45:01.038"/>
-</kw>
-<msg timestamp="20220208 16:45:01.038" level="INFO">${found} = False</msg>
-<status status="PASS" starttime="20220208 16:45:00.055" endtime="20220208 16:45:01.038"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${found}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220208 16:45:01.038" endtime="20220208 16:45:01.039"/>
-</kw>
-<kw name="Exit For Loop If" library="BuiltIn">
-<arg>${found}</arg>
-<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220208 16:45:01.039" endtime="20220208 16:45:01.040"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<arg>Scroll Element Into View</arg>
-<arg>${page_footer}</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${page_footer}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220208 16:45:01.555" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1198.png"&gt;&lt;img src="selenium-screenshot-1198.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220208 16:45:01.075" endtime="20220208 16:45:01.556"/>
-</kw>
-<msg timestamp="20220208 16:45:01.558" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=97.0.4692.99)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x01236903+2517251]
-	Ordinal0 [0x011CF8E1+2095329]
-	Ordinal0 [0x010D2710+1058576]
-	Ordinal0 [0x0112D1C4+1429956]
-	Ordinal0 [0x011164D3+1336531]
-	Ordinal0 [0x01125BBF+1399743]
-	Ordinal0 [0x0111639B+1336219]
-	Ordinal0 [0x010F27A7+1189799]
-	Ordinal0 [0x010F3609+1193481]
-	GetHandleVerifier [0x013C5904+1577972]
-	GetHandleVerifier [0x01470B97+2279047]
-	GetHandleVerifier [0x012C6D09+534521]
-	GetHandleVerifier [0x012C5DB9+530601]
-	Ordinal0 [0x011D4FF9+2117625]
-	Ordinal0 [0x011D98A8+2136232]
-	Ordinal0 [0x011D99E2+2136546]
-	Ordinal0 [0x011E3541+2176321]
-	BaseThreadInitThunk [0x76BE6359+25]
-	RtlGetAppContainerNamedObjectPath [0x776387D4+228]
-	RtlGetAppContainerNamedObjectPath [0x776387A4+180]
-</msg>
-<status status="FAIL" starttime="20220208 16:45:01.041" endtime="20220208 16:45:01.558"/>
-</kw>
-<status status="PASS" starttime="20220208 16:45:01.040" endtime="20220208 16:45:01.558"/>
-</kw>
-<status status="PASS" starttime="20220208 16:45:00.054" endtime="20220208 16:45:01.559"/>
-</iter>
-<iter>
-<var name="${i}">3</var>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${found}</var>
-<arg>Page Should Contain Element</arg>
-<arg>${product_element}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${product_element}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220208 16:45:01.622" level="INFO">Current page contains element '//h2[contains(text(),'iPhone XS تک سیم کارت ظرفیت 512 گیگابایت')]'.</msg>
-<status status="PASS" starttime="20220208 16:45:01.560" endtime="20220208 16:45:01.622"/>
-</kw>
-<msg timestamp="20220208 16:45:01.623" level="INFO">${found} = True</msg>
-<status status="PASS" starttime="20220208 16:45:01.559" endtime="20220208 16:45:01.623"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${found}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220208 16:45:01.623" endtime="20220208 16:45:01.624"/>
-</kw>
-<kw name="Exit For Loop If" library="BuiltIn">
-<arg>${found}</arg>
-<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
-<msg timestamp="20220208 16:45:01.625" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20220208 16:45:01.625" endtime="20220208 16:45:01.626"/>
-</kw>
-<status status="PASS" starttime="20220208 16:45:01.559" endtime="20220208 16:45:01.626"/>
-</iter>
-<status status="PASS" starttime="20220208 16:44:56.260" endtime="20220208 16:45:01.626"/>
-</for>
-<kw name="Wait For Element" library="Basic">
-<arg>${product_element}</arg>
-<doc>all typed of waits</doc>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:45:01.628" endtime="20220208 16:45:02.007"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:45:02.007" endtime="20220208 16:45:02.183"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:45:02.183" endtime="20220208 16:45:02.242"/>
-</kw>
-<status status="PASS" starttime="20220208 16:45:01.627" endtime="20220208 16:45:02.242"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<arg>Scroll Element Into View</arg>
-<arg>${product_element}</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${product_element}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220208 16:45:02.676" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1199.png"&gt;&lt;img src="selenium-screenshot-1199.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220208 16:45:02.280" endtime="20220208 16:45:02.676"/>
-</kw>
-<msg timestamp="20220208 16:45:02.678" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=97.0.4692.99)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x01236903+2517251]
-	Ordinal0 [0x011CF8E1+2095329]
-	Ordinal0 [0x010D2710+1058576]
-	Ordinal0 [0x0112D1C4+1429956]
-	Ordinal0 [0x011164D3+1336531]
-	Ordinal0 [0x01125BBF+1399743]
-	Ordinal0 [0x0111639B+1336219]
-	Ordinal0 [0x010F27A7+1189799]
-	Ordinal0 [0x010F3609+1193481]
-	GetHandleVerifier [0x013C5904+1577972]
-	GetHandleVerifier [0x01470B97+2279047]
-	GetHandleVerifier [0x012C6D09+534521]
-	GetHandleVerifier [0x012C5DB9+530601]
-	Ordinal0 [0x011D4FF9+2117625]
-	Ordinal0 [0x011D98A8+2136232]
-	Ordinal0 [0x011D99E2+2136546]
-	Ordinal0 [0x011E3541+2176321]
-	BaseThreadInitThunk [0x76BE6359+25]
-	RtlGetAppContainerNamedObjectPath [0x776387D4+228]
-	RtlGetAppContainerNamedObjectPath [0x776387A4+180]
-</msg>
-<status status="FAIL" starttime="20220208 16:45:02.244" endtime="20220208 16:45:02.678"/>
-</kw>
-<status status="PASS" starttime="20220208 16:45:02.243" endtime="20220208 16:45:02.678"/>
+<status status="PASS" starttime="20220212 08:44:56.300" endtime="20220212 08:44:56.598"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Mouse Over</arg>
-<arg>${product_element}</arg>
+<arg>${element}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <kw name="Mouse Over" library="SeleniumLibrary">
-<arg>${product_element}</arg>
+<arg>${element}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220208 16:45:02.680" level="INFO">Simulating Mouse Over on element '//h2[contains(text(),'iPhone XS تک سیم کارت ظرفیت 512 گیگابایت')]'.</msg>
-<status status="PASS" starttime="20220208 16:45:02.680" endtime="20220208 16:45:03.065"/>
+<msg timestamp="20220212 08:44:56.599" level="INFO">Simulating Mouse Over on element 'XPath://div[text()='نوع فروشنده']'.</msg>
+<status status="PASS" starttime="20220212 08:44:56.599" endtime="20220212 08:44:56.900"/>
 </kw>
-<status status="PASS" starttime="20220208 16:45:02.679" endtime="20220208 16:45:03.066"/>
+<status status="PASS" starttime="20220212 08:44:56.598" endtime="20220212 08:44:56.900"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${product_element}</arg>
+<arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:45:03.068" level="INFO">Clicking element '//h2[contains(text(),'iPhone XS تک سیم کارت ظرفیت 512 گیگابایت')]'.</msg>
-<status status="PASS" starttime="20220208 16:45:03.067" endtime="20220208 16:45:03.248"/>
+<msg timestamp="20220212 08:44:56.901" level="INFO">Clicking element 'XPath://div[text()='نوع فروشنده']'.</msg>
+<status status="PASS" starttime="20220212 08:44:56.900" endtime="20220212 08:44:57.205"/>
+</kw>
+<status status="PASS" starttime="20220212 08:44:54.881" endtime="20220212 08:44:57.206"/>
+</kw>
+<kw name="Click On Element" library="Basic">
+<arg>${seller_digikala}</arg>
+<doc>do a succesful click</doc>
+<kw name="Wait For Element" library="Basic">
+<arg>${element}</arg>
+<doc>all typed of waits</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220212 08:44:57.210" endtime="20220212 08:44:57.238"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220212 08:44:57.238" endtime="20220212 08:44:57.273"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220212 08:44:57.273" endtime="20220212 08:44:57.315"/>
+</kw>
+<status status="PASS" starttime="20220212 08:44:57.209" endtime="20220212 08:44:57.315"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220212 08:44:58.869" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-356.png"&gt;&lt;img src="selenium-screenshot-356.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220212 08:44:57.449" endtime="20220212 08:44:58.869"/>
+</kw>
+<msg timestamp="20220212 08:44:59.521" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=98.0.4758.82)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CA7AC3+2587331]
+	Ordinal0 [0x00C3ADD1+2141649]
+	Ordinal0 [0x00B33A80+1063552]
+	Ordinal0 [0x00B90008+1441800]
+	Ordinal0 [0x00B7868C+1345164]
+	Ordinal0 [0x00B88A0A+1411594]
+	Ordinal0 [0x00B784A6+1344678]
+	Ordinal0 [0x00B553F6+1201142]
+	Ordinal0 [0x00B562E6+1204966]
+	GetHandleVerifier [0x00E4DF22+1680738]
+	GetHandleVerifier [0x00F00DBC+2413564]
+	GetHandleVerifier [0x00D3D151+563089]
+	GetHandleVerifier [0x00D3BF13+558419]
+	Ordinal0 [0x00C4081E+2164766]
+	Ordinal0 [0x00C45508+2184456]
+	Ordinal0 [0x00C45650+2184784]
+	Ordinal0 [0x00C4F5BC+2225596]
+	BaseThreadInitThunk [0x76E56359+25]
+	RtlGetAppContainerNamedObjectPath [0x776A87D4+228]
+	RtlGetAppContainerNamedObjectPath [0x776A87A4+180]
+</msg>
+<status status="FAIL" starttime="20220212 08:44:57.316" endtime="20220212 08:44:59.522"/>
+</kw>
+<status status="PASS" starttime="20220212 08:44:57.315" endtime="20220212 08:44:59.522"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Mouse Over</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220212 08:44:59.525" level="INFO">Simulating Mouse Over on element 'XPath://div[text()='دیجی‌کالا']'.</msg>
+<status status="PASS" starttime="20220212 08:44:59.524" endtime="20220212 08:44:59.838"/>
+</kw>
+<status status="PASS" starttime="20220212 08:44:59.523" endtime="20220212 08:44:59.838"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220212 08:44:59.840" level="INFO">Clicking element 'XPath://div[text()='دیجی‌کالا']'.</msg>
+<status status="PASS" starttime="20220212 08:44:59.839" endtime="20220212 08:45:00.439"/>
+</kw>
+<status status="PASS" starttime="20220212 08:44:57.208" endtime="20220212 08:45:00.440"/>
+</kw>
+<kw name="Click On Element" library="Basic">
+<arg>${sorting_order_element}</arg>
+<doc>do a succesful click</doc>
+<kw name="Wait For Element" library="Basic">
+<arg>${element}</arg>
+<doc>all typed of waits</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220212 08:45:00.456" endtime="20220212 08:45:00.572"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220212 08:45:00.572" endtime="20220212 08:45:01.617"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220212 08:45:01.618" endtime="20220212 08:45:01.741"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:00.455" endtime="20220212 08:45:01.741"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220212 08:45:01.742" endtime="20220212 08:45:02.275"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:01.741" endtime="20220212 08:45:02.275"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Mouse Over</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220212 08:45:02.276" level="INFO">Simulating Mouse Over on element 'XPath://div[text()='پرفروش‌ترین‌']'.</msg>
+<status status="PASS" starttime="20220212 08:45:02.276" endtime="20220212 08:45:02.790"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:02.275" endtime="20220212 08:45:02.790"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220212 08:45:02.791" level="INFO">Clicking element 'XPath://div[text()='پرفروش‌ترین‌']'.</msg>
+<status status="PASS" starttime="20220212 08:45:02.790" endtime="20220212 08:45:03.218"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:00.454" endtime="20220212 08:45:03.218"/>
+</kw>
+<kw name="Click On Element" library="Basic">
+<arg>${brand}</arg>
+<doc>do a succesful click</doc>
+<kw name="Wait For Element" library="Basic">
+<arg>${element}</arg>
+<doc>all typed of waits</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220212 08:45:03.227" endtime="20220212 08:45:03.333"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220212 08:45:03.334" endtime="20220212 08:45:03.797"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220212 08:45:03.797" endtime="20220212 08:45:04.001"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:03.225" endtime="20220212 08:45:04.001"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220212 08:45:04.003" endtime="20220212 08:45:04.647"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:04.002" endtime="20220212 08:45:04.647"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Mouse Over</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220212 08:45:04.649" level="INFO">Simulating Mouse Over on element 'XPath://div[text()='برند']'.</msg>
+<status status="PASS" starttime="20220212 08:45:04.648" endtime="20220212 08:45:05.199"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:04.647" endtime="20220212 08:45:05.199"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220212 08:45:05.201" level="INFO">Clicking element 'XPath://div[text()='برند']'.</msg>
+<status status="PASS" starttime="20220212 08:45:05.200" endtime="20220212 08:45:05.845"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:03.224" endtime="20220212 08:45:05.846"/>
+</kw>
+<kw name="Click On Element" library="Basic">
+<arg>${brand_apple}</arg>
+<doc>do a succesful click</doc>
+<kw name="Wait For Element" library="Basic">
+<arg>${element}</arg>
+<doc>all typed of waits</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220212 08:45:05.848" endtime="20220212 08:45:05.882"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220212 08:45:05.882" endtime="20220212 08:45:05.919"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220212 08:45:05.919" endtime="20220212 08:45:05.971"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:05.848" endtime="20220212 08:45:05.972"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220212 08:45:05.973" endtime="20220212 08:45:06.297"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:05.972" endtime="20220212 08:45:06.298"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Mouse Over</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220212 08:45:06.299" level="INFO">Simulating Mouse Over on element '//*[@id="plpLayoutContainer"]/section[2]/div/div/div[1]/div[2]/div[2]/div[3]/div/div[2]'.</msg>
+<status status="PASS" starttime="20220212 08:45:06.298" endtime="20220212 08:45:06.616"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:06.298" endtime="20220212 08:45:06.616"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220212 08:45:06.618" level="INFO">Clicking element '//*[@id="plpLayoutContainer"]/section[2]/div/div/div[1]/div[2]/div[2]/div[3]/div/div[2]'.</msg>
+<status status="PASS" starttime="20220212 08:45:06.617" endtime="20220212 08:45:07.048"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:05.847" endtime="20220212 08:45:07.050"/>
+</kw>
+<kw name="Click On Element" library="Basic">
+<arg>${product_element}</arg>
+<doc>do a succesful click</doc>
+<kw name="Wait For Element" library="Basic">
+<arg>${element}</arg>
+<doc>all typed of waits</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220212 08:45:07.057" endtime="20220212 08:45:07.928"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220212 08:45:07.928" endtime="20220212 08:45:08.077"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220212 08:45:08.077" endtime="20220212 08:45:08.123"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:07.056" endtime="20220212 08:45:08.123"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220212 08:45:08.767" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-357.png"&gt;&lt;img src="selenium-screenshot-357.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220212 08:45:08.154" endtime="20220212 08:45:08.767"/>
+</kw>
+<msg timestamp="20220212 08:45:08.769" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=98.0.4758.82)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CA7AC3+2587331]
+	Ordinal0 [0x00C3ADD1+2141649]
+	Ordinal0 [0x00B33A80+1063552]
+	Ordinal0 [0x00B90008+1441800]
+	Ordinal0 [0x00B7868C+1345164]
+	Ordinal0 [0x00B88A0A+1411594]
+	Ordinal0 [0x00B784A6+1344678]
+	Ordinal0 [0x00B553F6+1201142]
+	Ordinal0 [0x00B562E6+1204966]
+	GetHandleVerifier [0x00E4DF22+1680738]
+	GetHandleVerifier [0x00F00DBC+2413564]
+	GetHandleVerifier [0x00D3D151+563089]
+	GetHandleVerifier [0x00D3BF13+558419]
+	Ordinal0 [0x00C4081E+2164766]
+	Ordinal0 [0x00C45508+2184456]
+	Ordinal0 [0x00C45650+2184784]
+	Ordinal0 [0x00C4F5BC+2225596]
+	BaseThreadInitThunk [0x76E56359+25]
+	RtlGetAppContainerNamedObjectPath [0x776A87D4+228]
+	RtlGetAppContainerNamedObjectPath [0x776A87A4+180]
+</msg>
+<status status="FAIL" starttime="20220212 08:45:08.124" endtime="20220212 08:45:08.770"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:08.124" endtime="20220212 08:45:08.770"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Mouse Over</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220212 08:45:08.771" level="INFO">Simulating Mouse Over on element '(//h2[contains(text(),' مدل iPhone 13 Pro Max A2644 دو سیم‌ کارت ظرفیت 1 ترابایت و رم 6 گیگابایت')])[1]'.</msg>
+<status status="PASS" starttime="20220212 08:45:08.770" endtime="20220212 08:45:09.089"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:08.770" endtime="20220212 08:45:09.089"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220212 08:45:09.090" level="INFO">Clicking element '(//h2[contains(text(),' مدل iPhone 13 Pro Max A2644 دو سیم‌ کارت ظرفیت 1 ترابایت و رم 6 گیگابایت')])[1]'.</msg>
+<status status="PASS" starttime="20220212 08:45:09.089" endtime="20220212 08:45:10.660"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:07.054" endtime="20220212 08:45:10.661"/>
 </kw>
 <kw name="Get Window Handles" library="SeleniumLibrary">
 <var>${handle}</var>
 <doc>Returns all child window handles of the selected browser as a list.</doc>
-<msg timestamp="20220208 16:45:03.290" level="INFO">${handle} = ['CDwindow-42307CBE7C2FB5650B61AC37A24934C2', 'CDwindow-499CF75759166DC1948FCC93C1CB797D']</msg>
-<status status="PASS" starttime="20220208 16:45:03.250" endtime="20220208 16:45:03.290"/>
+<msg timestamp="20220212 08:45:11.977" level="INFO">${handle} = ['CDwindow-0CEA8CF77535D38D61C0D32DF5A6CBF7', 'CDwindow-9BADB0F845F4B0FDB618A45BBE9E709B']</msg>
+<status status="PASS" starttime="20220212 08:45:10.662" endtime="20220212 08:45:11.977"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>${handle}[1]</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220208 16:45:03.292" endtime="20220208 16:45:03.490"/>
+<status status="PASS" starttime="20220212 08:45:11.978" endtime="20220212 08:45:12.529"/>
 </kw>
+<kw name="Click On Element" library="Basic">
+<arg>${add_to_card_button}</arg>
+<doc>do a succesful click</doc>
 <kw name="Wait For Element" library="Basic">
-<arg>${notification_button}</arg>
+<arg>${element}</arg>
 <doc>all typed of waits</doc>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:45:03.492" endtime="20220208 16:45:12.696"/>
+<status status="PASS" starttime="20220212 08:45:12.533" endtime="20220212 08:45:19.139"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:45:12.696" endtime="20220208 16:45:12.753"/>
+<status status="PASS" starttime="20220212 08:45:19.139" endtime="20220212 08:45:19.189"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:45:12.753" endtime="20220208 16:45:12.808"/>
+<status status="PASS" starttime="20220212 08:45:19.190" endtime="20220212 08:45:19.260"/>
 </kw>
-<status status="PASS" starttime="20220208 16:45:03.491" endtime="20220208 16:45:12.809"/>
+<status status="PASS" starttime="20220212 08:45:12.532" endtime="20220212 08:45:19.260"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Scroll Element Into View</arg>
-<arg>${notification_button}</arg>
+<arg>${element}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${notification_button}</arg>
+<arg>${element}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220208 16:45:12.810" endtime="20220208 16:45:13.111"/>
+<status status="PASS" starttime="20220212 08:45:19.261" endtime="20220212 08:45:19.558"/>
 </kw>
-<status status="PASS" starttime="20220208 16:45:12.809" endtime="20220208 16:45:13.111"/>
+<status status="PASS" starttime="20220212 08:45:19.261" endtime="20220212 08:45:19.558"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Mouse Over</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220212 08:45:19.559" level="INFO">Simulating Mouse Over on element 'XPath:(//div[text()='افزودن به سبد'])[3]'.</msg>
+<status status="PASS" starttime="20220212 08:45:19.559" endtime="20220212 08:45:19.858"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:19.558" endtime="20220212 08:45:19.858"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${notification_button}</arg>
+<arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:45:13.113" level="INFO">Clicking element '//div[text()='خبرم کنید']'.</msg>
-<status status="PASS" starttime="20220208 16:45:13.112" endtime="20220208 16:45:13.321"/>
+<msg timestamp="20220212 08:45:19.859" level="INFO">Clicking element 'XPath:(//div[text()='افزودن به سبد'])[3]'.</msg>
+<status status="PASS" starttime="20220212 08:45:19.858" endtime="20220212 08:45:19.976"/>
 </kw>
+<status status="PASS" starttime="20220212 08:45:12.531" endtime="20220212 08:45:19.977"/>
+</kw>
+<kw name="Click On Element" library="Basic">
+<arg>${bascket_button}</arg>
+<doc>do a succesful click</doc>
 <kw name="Wait For Element" library="Basic">
-<arg>${sms_checkbox}</arg>
+<arg>${element}</arg>
 <doc>all typed of waits</doc>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:45:13.323" endtime="20220208 16:45:13.364"/>
+<status status="PASS" starttime="20220212 08:45:19.979" endtime="20220212 08:45:20.228"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:45:13.364" endtime="20220208 16:45:13.402"/>
+<status status="PASS" starttime="20220212 08:45:20.228" endtime="20220212 08:45:20.267"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:45:13.402" endtime="20220208 16:45:13.449"/>
+<status status="PASS" starttime="20220212 08:45:20.268" endtime="20220212 08:45:20.324"/>
 </kw>
-<status status="PASS" starttime="20220208 16:45:13.322" endtime="20220208 16:45:13.449"/>
+<status status="PASS" starttime="20220212 08:45:19.978" endtime="20220212 08:45:20.325"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220212 08:45:20.325" endtime="20220212 08:45:20.630"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:20.325" endtime="20220212 08:45:20.630"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Mouse Over</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220212 08:45:20.632" level="INFO">Simulating Mouse Over on element 'XPath:(//p[text()='سبد خرید'])[1]'.</msg>
+<status status="PASS" starttime="20220212 08:45:20.631" endtime="20220212 08:45:20.942"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:20.631" endtime="20220212 08:45:20.942"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${sms_checkbox}</arg>
+<arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:45:13.450" level="INFO">Clicking element '//p[contains(text(),'ارسال پیامک')]'.</msg>
-<status status="PASS" starttime="20220208 16:45:13.450" endtime="20220208 16:45:13.558"/>
+<msg timestamp="20220212 08:45:20.943" level="INFO">Clicking element 'XPath:(//p[text()='سبد خرید'])[1]'.</msg>
+<status status="PASS" starttime="20220212 08:45:20.942" endtime="20220212 08:45:21.314"/>
 </kw>
+<status status="PASS" starttime="20220212 08:45:19.978" endtime="20220212 08:45:21.315"/>
+</kw>
+<kw name="Click On Element" library="Basic">
+<arg>${checkout_button}</arg>
+<doc>do a succesful click</doc>
 <kw name="Wait For Element" library="Basic">
-<arg>${notification_submit_button}</arg>
+<arg>${element}</arg>
 <doc>all typed of waits</doc>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:45:13.560" endtime="20220208 16:45:13.586"/>
+<status status="PASS" starttime="20220212 08:45:21.328" endtime="20220212 08:45:21.363"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:45:13.586" endtime="20220208 16:45:13.629"/>
+<status status="PASS" starttime="20220212 08:45:21.363" endtime="20220212 08:45:21.395"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:45:13.629" endtime="20220208 16:45:13.681"/>
+<status status="PASS" starttime="20220212 08:45:21.395" endtime="20220212 08:45:21.461"/>
 </kw>
-<status status="PASS" starttime="20220208 16:45:13.559" endtime="20220208 16:45:13.681"/>
+<status status="PASS" starttime="20220212 08:45:21.327" endtime="20220212 08:45:21.462"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220212 08:45:21.462" endtime="20220212 08:45:21.933"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:21.462" endtime="20220212 08:45:21.934"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Mouse Over</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220212 08:45:21.935" level="INFO">Simulating Mouse Over on element 'XPath://div[text()='ادامه']'.</msg>
+<status status="PASS" starttime="20220212 08:45:21.934" endtime="20220212 08:45:22.227"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:21.934" endtime="20220212 08:45:22.227"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${notification_submit_button}</arg>
+<arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220208 16:45:13.683" level="INFO">Clicking element 'XPath:(//div[text()='ثبت'])[2]'.</msg>
-<status status="PASS" starttime="20220208 16:45:13.682" endtime="20220208 16:45:13.779"/>
+<msg timestamp="20220212 08:45:22.228" level="INFO">Clicking element 'XPath://div[text()='ادامه']'.</msg>
+<status status="PASS" starttime="20220212 08:45:22.227" endtime="20220212 08:45:22.396"/>
 </kw>
-<kw name="Wait For Element" library="Basic">
-<arg>${notification_enabled}</arg>
-<doc>all typed of waits</doc>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220208 16:45:13.781" endtime="20220208 16:45:14.031"/>
+<status status="PASS" starttime="20220212 08:45:21.326" endtime="20220212 08:45:22.397"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220208 16:45:14.032" endtime="20220208 16:45:14.079"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220208 16:45:14.080" endtime="20220208 16:45:14.167"/>
-</kw>
-<status status="PASS" starttime="20220208 16:45:13.780" endtime="20220208 16:45:14.168"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${notification_enabled}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220208 16:45:14.186" level="INFO">Current page contains element '//div[text()='دیگر لازم نیست خبرم کنید']'.</msg>
-<status status="PASS" starttime="20220208 16:45:14.168" endtime="20220208 16:45:14.186"/>
-</kw>
-<tag>availability</tag>
+<tag>buy</tag>
 <tag>Digikala</tag>
-<status status="PASS" starttime="20220208 16:44:53.400" endtime="20220208 16:45:14.187"/>
+<status status="PASS" starttime="20220212 08:44:53.206" endtime="20220212 08:45:22.398"/>
+</test>
+<test id="s1-t2" name="Delete the item">
+<kw name="Go Back" library="Basic">
+<doc>go back</doc>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>history.back()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220212 08:45:22.403" level="INFO">Executing JavaScript:
+history.back()
+Without any arguments.</msg>
+<status status="PASS" starttime="20220212 08:45:22.402" endtime="20220212 08:45:22.838"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:22.402" endtime="20220212 08:45:22.839"/>
+</kw>
+<kw name="Click On Element" library="Basic">
+<arg>${delete_element}</arg>
+<doc>do a succesful click</doc>
+<kw name="Wait For Element" library="Basic">
+<arg>${element}</arg>
+<doc>all typed of waits</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220212 08:45:22.845" endtime="20220212 08:45:22.946"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220212 08:45:22.946" endtime="20220212 08:45:23.002"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220212 08:45:23.003" endtime="20220212 08:45:23.054"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:22.844" endtime="20220212 08:45:23.054"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220212 08:45:23.055" endtime="20220212 08:45:23.348"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:23.055" endtime="20220212 08:45:23.348"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Mouse Over</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220212 08:45:23.350" level="INFO">Simulating Mouse Over on element '//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div/ul[2]/li/div/div/section/div/div/div[2]/div[2]/div[1]/div[3]/div/button[2]'.</msg>
+<status status="PASS" starttime="20220212 08:45:23.349" endtime="20220212 08:45:23.814"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:23.348" endtime="20220212 08:45:23.814"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220212 08:45:23.815" level="INFO">Clicking element '//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div/ul[2]/li/div/div/section/div/div/div[2]/div[2]/div[1]/div[3]/div/button[2]'.</msg>
+<status status="PASS" starttime="20220212 08:45:23.814" endtime="20220212 08:45:23.923"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:22.843" endtime="20220212 08:45:23.923"/>
+</kw>
+<kw name="Wait For Element" library="Basic">
+<arg>${empty_bascket}</arg>
+<doc>all typed of waits</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220212 08:45:23.927" endtime="20220212 08:45:24.189"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220212 08:45:24.189" endtime="20220212 08:45:24.222"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220212 08:45:24.222" endtime="20220212 08:45:24.268"/>
+</kw>
+<status status="PASS" starttime="20220212 08:45:23.926" endtime="20220212 08:45:24.269"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${empty_bascket_1}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220212 08:45:24.301" level="INFO">Current page contains text 'خالی'.</msg>
+<status status="PASS" starttime="20220212 08:45:24.270" endtime="20220212 08:45:24.301"/>
+</kw>
+<tag>buy</tag>
+<tag>Digikala</tag>
+<status status="PASS" starttime="20220212 08:45:22.401" endtime="20220212 08:45:24.302"/>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220208 16:45:14.190" endtime="20220208 16:45:17.607"/>
+<status status="PASS" starttime="20220212 08:45:24.305" endtime="20220212 08:45:27.723"/>
 </kw>
-<doc>a test suit for checking availability of a product</doc>
-<status status="PASS" starttime="20220208 16:44:27.909" endtime="20220208 16:45:17.607"/>
+<doc>a test suit for buying and deleting an item</doc>
+<status status="PASS" starttime="20220212 08:43:30.085" endtime="20220212 08:45:27.723"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">availability</stat>
-<stat pass="1" fail="0" skip="0">Digikala</stat>
+<stat pass="2" fail="0" skip="0">buy</stat>
+<stat pass="2" fail="0" skip="0">Digikala</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Check Availabitity of Product">Check Availabitity of Product</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Buy and Delete Product">Buy and Delete Product</stat>
 </suite>
 </statistics>
 <errors>
